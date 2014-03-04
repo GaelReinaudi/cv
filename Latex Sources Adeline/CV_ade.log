@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.1.18)  3 MAR 2014 22:15
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.1.18)  3 MAR 2014 22:27
 entering extended mode
 **CV_ade.tex
 ("F:\Gael\CVs latex\Latex Sources Adeline\CV_ade.tex"
@@ -506,7 +506,7 @@ File: image.jpg Graphic file (type jpg)
 ("F:\Gael\CVs latex\Latex Sources Adeline\experience_en.tex")
 ("F:\Gael\CVs latex\Latex Sources Adeline\experience_en.tex")
 ("F:\Gael\CVs latex\Latex Sources Adeline\experience_en.tex"
-Overfull \hbox (11.18063pt too wide) in paragraph at lines 132--145
+Overfull \hbox (72.57039pt too wide) in paragraph at lines 132--145
 [][]| 
  []
 
@@ -547,7 +547,7 @@ Package rerunfilecheck Info: File `CV_ade.out' has not changed.
 Here is how much of TeX's memory you used:
  7024 strings out of 495276
  104748 string characters out of 3179864
- 202496 words of memory out of 3000000
+ 203496 words of memory out of 3000000
  10038 multiletter control sequences out of 15000+200000
  29967 words of font info for 43 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -562,7 +562,7 @@ s/type1/urw/palatino/uplb8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1/
 urw/palatino/uplbi8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/pal
 atino/uplr8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/up
 lri8a.pfb>
-Output written on CV_ade.pdf (2 pages, 259782 bytes).
+Output written on CV_ade.pdf (2 pages, 260088 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  6 named destinations out of 1000 (max. 500000)
