@@ -1,0 +1,341 @@
+<html><head><title>Jennifer Sager</title></head><body bgcolor="#001920" text="#ffffff">
+
+<font size="5">
+<p style="margin-top: 0pt; margin-bottom: 0pt;" align="center"><a href="http://www.cs.unm.edu/%7Esagerj/index.htm">Jenny Sager</a></p>
+</font>
+
+<br>
+
+<font size="5">
+<p style="margin-top: 0pt; margin-bottom: 0pt;" align="center">ResumeTeX</p>
+</font>
+
+<p>
+ResumeTeX uses LaTeX and BibTeX to generate a resume or cv (curriculum
+vitae) as a postscript or pdf file. ResumeTeX is still a work in
+progress so if you use this code, check back here for updates. To use
+ResumeTeX you need to already know how to use LaTeX (see "A Guide to
+Latex" by Helmut Kopka and Patrick W. Daly published by Addison-Wesley,
+3rd edition 1999.) and BibTeX (see "BibTeXing" by Oren Patashnik
+February 8, 1988).
+</p>
+
+<p>TODO: Yes I know that this page is ugly and hard to read. This needs
+to be fixed later. This page contains some comments on ResumeTeX, but
+if you understand LaTeX and BibTex the sample files below should be
+enough documentation. At some point in the future when I have time, I
+would like to fully document this code and upload it to <a href="http://www.ctan.org/">CTAN</a>.</p>
+
+<p>The advantages of using this code is that it separates your resume
+data from the formatting, and it makes it easy to change your resume
+without retyping your data. This code is something I wrote (for fun?)
+in about three weeks to use for creating my own resume, since I wanted
+my resume to be in pdf format. Since I find that I often need to change
+my resume depending on where I submit it to, I wanted to create a
+system that would allow me to easily change my resume without
+constantly retyping and deleting information in my resume. I'm pretty
+happy with it. Please email me (sagerj@acm.org) if you find any bugs or
+have comments on how it works.</p>
+
+<p>
+Permission is hereby granted to use and modify the above files for
+non-profit uses as long as the author (Jennifer A. Sager) is credited
+for the original implementation.
+</p>
+
+<h2>ResumeTeX Files</h2>
+These files are the backbone of ResumeTeX.<br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/resumetex.bst">resumetex.bst</a><br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/resumetex.cls">resumetex.cls</a><br>
+
+<h2>Example Personal Information Files</h2>These files hold your
+personal information. I have placed my publications in a separate
+file--this isn't necessay. I've done this so that I can use
+publications.bib with normal latex documents for paper writing.<br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/resume.bib">resume.bib</a><br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/publications.bib">publications.bib</a><br>
+<br>
+These files setup which data you want to include in this complication of your resume.<br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/resume.tex">resume.tex</a><br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/education.tex">education.tex</a><br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/experience.tex">experience.tex</a><br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/goal.tex">goal.tex</a><br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/publications.tex">publications.tex</a><br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/references.tex">references.tex</a><br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/skills.tex">skills.tex</a><br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/software.tex">software.tex</a><br>
+
+<h2>ResumeTeX Style Files</h2>
+These files apply a style to your resume data.<br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/resumetex_format1.sty">resumetex_format1.sty</a>. Example resume: <a href="http://www.cs.unm.edu/%7Esagerj/resumetex/resume_format1.pdf">resume_format1.pdf</a><br>
+<a href="http://www.cs.unm.edu/%7Esagerj/resumetex/resumetex_format2.sty">resumetex_formate2.sty</a>. Example resume: <a href="http://www.cs.unm.edu/%7Esagerj/resumetex/resume_format2.pdf">resume_format2.pdf</a><br>
+
+<h2>Additional TeX Packages</h2>
+I use CurVe to help with formatting in my style files.<br>
+<a href="http://www.ctan.org/info?id=curve">CurVe</a><br>
+
+<h2>How to use ResumeTeX:</h2>
+
+<p>
+Download resumetex.bst (BibTeX file for ResumeTeX entries),
+resumetex.cls (LaTeX ResumeTeX document class), and at least one of the
+resumetex_formatXxx.sty files (LaTeX ResumeTeX style package). You also
+need the <a href="http://www.ctan.org/info?id=curve">CurVe TeX package</a>, availble from <a href="http://www.ctan.org/">ctan.org</a>.
+You will need to create a .tex and a .bib file for your own information
+simular to the examples above. Optionally you can create your own style
+package to customize the style of your resume.
+</p>
+
+<h2>Creating a postscript or pdf file</h2>
+
+To compile I use this sequence of commands:
+<pre>latex resume;
+bibtex resume;
+latex resume;
+latex resume;
+dvips -t letter -f resume.dvi &gt; resume.ps;
+ps2pdf resume.ps;
+</pre>The first time that you call latex, you will get a lot of errors
+about undefined commands. This is not a bug. The second time you run
+latex there shouldn't be errors (if there are errors the second time
+then this is a bug).
+<h2>Components of the .bib file</h2>**WARNING: THE CITATION LABELS CAN
+ONLY BE COMBINATIONS OF LETTERS.** For example your label can be
+"@job{UNMJob, ..." but not "@job{UNMJob2005, ...". (This is because my
+system makes LaTeX commands out of the citation labels, and LaTeX
+commands can only be letters.)
+Types of entries:<br>
+
+<pre>@goal</pre>
+    description: Entry for resume goal.<br>
+    required fields: description<br>
+<pre>@academicschool</pre>
+    description: Entry for a school.<br>
+    required fields: school, location, date, degree, description<br>
+    optional fields: TODO: make degree optional<br>
+<pre>@job</pre>
+    description: Entry for a job<br>
+    required fields: title, company, location, date, supervisor, description<br>
+    optional fields: TODO: make supervisor optional<br>
+<pre>@skill</pre>
+    description: Entry for a skill<br>
+    required fields: title, description,<br>
+<pre>@reference</pre>
+    description: Entry for a reference<br>
+    required fields: name, address<br>
+    optional fields: TODO: make address optional<br>
+<pre>@article, @book, @booklet, @inbook, @incollection, @inproceedings, @conference, @manual, @mastersthesis, @misc, @phdthesis, @proceedings, @techreport, and @unpublished</pre>
+    For these standard BibTeX entries see a description of unsrt.bib for the required and optional fields.
+
+<h2>Components of the .tex file</h2>
+
+<pre>\documentclass{resumetex}  % sets the document class to ResumeTeX
+
+% include one of the ResumeTeX style packages or your own ResumeTeX style package
+\usepackage{resumetex_format1}  % uncomment this to use the resumetex_format1 style
+%\usepackage{resumetex_format2}  % uncomment this to use the resumetex_format2 style
+
+% ------ Address --------------------------------------------------------
+
+\leftheader{\href{mailto:sagerj@acm.org}{\texttt{sagerj@acm.org}}}
+\rightheader{\url{http://www.cs.unm.edu/~sagerj}}
+\title{Jennifer A. Sager}
+\subtitle{}
+
+% ------ Document --------------------------------------------------------
+
+\begin{document}
+
+% The strange placement of these commands at the beginning of the document is important!
+% create citations for all the entries in the bibliography from resume.bib and publications.bib
+\resumedata{resume,publications}
+\input{resume.bbl}
+
+\makeheaders[t]
+\maketitle
+
+% each rubric must be in a separate file
+% syntax: \makerubric{filename} where the filename does not include the extension
+\makerubric{goal}
+\makerubric{experience}
+\makerubric{education}
+\makerubric{publications}
+\makerubric{skills}
+\makerubric{software}
+\makerubric{references}
+
+\end{document}
+</pre>
+Each rubric resides in a separate file.
+The body is composed of LaTeX code and the following commands: rubric
+enviroment and commands created from the bibliography entries:
+For example:
+<pre>\begin{rubric}{Education}  % creates a rubric with the title "Education"
+\UNM    % inserts the UNM entry from the bibligraphy
+\CSSS   % inserts the CSSS entry from the bibligraphy
+\UPenn  % inserts the UPenn entry from the bibligraphy
+\end{rubric}  % ends the Education rubric
+</pre>The commands such as \UNM, \CSSS, and \UPenn are determined by
+the tags in the bibliography file. They must use the same
+capitalization as in the bib file, and must be valid latex commands (so
+they can't contain numbers, dashes, etc.).
+As a side note: the publication bib and other resume bibs do not need
+to be in seperate files. I've done it this way so that I can reuse my
+publications bibliography for citations in papers that I write.
+Also note that additional latex code can be inserted anywhere in the
+body of your .tex document, even in between rubric environment
+commands.
+<h2>Implementation notes</h2>
+
+<h3>style</h3>
+
+Most of the hard work about formating the text is done by CurVe.  The .sty files just customize CurVe.
+
+<h3>resumetex.bst</h3>
+
+<p>This file is based on the standard BibTeX file: unsrt.bib, but a few
+modifications have been made. Unlike normal BibTex, resumetex.bst
+generates latex commands from the tag of each cited entry. This is the
+reason why the bibliography is declared at the beginning of the
+document--we need to define these commands so that we can use them in
+the rest of the document. This is a bit of a strange way of using
+BibTeX, but I wanted to create a resume class that allows latex
+commands to be intermixed with the BibTeX commands that determine how
+the bibliography looks. If I just made ResumeTeX format a section
+simular to BibTeX's normal "References" section, then it would create a
+file that would be inserted in to the .tex file at a certain point and
+the user could not intermix latex commands.
+</p>
+
+<p>Each tag command calls a latex function determined by the type of
+tag. The program expects certain functions to be defined when it
+creates a citation for a bib entry--in ResumeTeX these functions are
+defined in the .sty files. This enables the user to specify the style
+of the resume in latex in the .sty files rather than BibTeX's
+postscript like language (glug!). If the style file implements all of
+the functions defined below, then the style of a single .tex file can
+be easily changed by changing the package that is included.</p>
+
+@goal entries formats its fields by calling the \goal function with the following arguments
+<pre>%\goal
+%   {#1 description}
+</pre>
+
+@job entries formats its fields by calling the \job function with the following arguments
+<pre>% \job
+%   {#1 title}
+%   {#2 company}
+%   {#3 location}
+%   {#4 date}
+%   {#5 supervisor}
+%   {#6 description}
+</pre>
+
+@degree entries formats its fields by calling the \degree function with the following arguments
+<pre>% \degree
+%   {#1 school}
+%   {#2 location}
+%   {#3 degree}
+%   {#4 date}
+%   {#5 description}
+</pre>
+
+@skill entries formats its fields by calling the \skill function with the following arguments
+<pre>% \skill
+%   {#1 name}
+%   {#2 description}
+</pre>
+
+@reference entries formats its fields by calling the \reference function with the following arguments
+<pre>% \reference
+%   {#1 name}
+%   {#2 address}
+</pre>
+
+@publication entries formats its fields by calling the \publication function with the following arguments
+<pre>% \publication
+%   {#1 description}
+</pre>
+The \publication function allows some customization of the style of
+publications, but most of the formatting is done by the code taken from
+unsrt.bib. If you want to make major changes to the publication style,
+you are going to have to make your own .bst file.
+<p>
+The following latex commands can be defined to change the font used for the title:<br>
+\authornamefont: The font used to print the author's name<br>
+\authoraddressfont: the font used to print the author's address<br>
+\authoremailfont: the font used to print the author's email<br>
+\authorwebsitefont: the font used to print the author's website<br>The
+formatting of the title section can also be changed by redefining the
+relevant commands in a style file (look at the file resumetex.cls to
+see which commands need to be redefined to do this).
+</p>
+
+<p>Another modication to unsrt.bib that has been made is to disallow
+latex to simplify entries using crossreferencing. Note that the
+crossing referencing tag is still allowed. This point is probably best
+explained with an example. consider the following bib entries:
+</p><pre>@inproceedings{SagerPreproceedingsOfDNAEleven,
+author = {Jennifer A. Sager and Darko Stefanovic},
+title = {Designing Nucleotide Sequences for Computation: A Survey of Constraints},
+crossref = "PRELIMINARYPROCEEDINGSINTERNATIONALDNAELEVEN"
+}
+
+@proceedings{PRELIMINARYPROCEEDINGSINTERNATIONALDNAELEVEN,
+key = "PRELIMINARYPROCEEDINGSINTERNATIONALDNAELEVEN",
+editor = {A. Carbone and M. Daley and L. Kari and I. McQuillan and N. Pierce},
+title = {Preliminary Proceedings of the 11th International Workshop on DNA-Based Computers, DNA 2005 (University of Western Ontario: London, Ontario, Canada)},
+booktitle = {Preliminary Proceedings of the 11th International Workshop on DNA-Based Computers, DNA 2005 (University of Western Ontario: London, Ontario, Canada)},
+year = 2005,
+month = jun
+}
+</pre>Under certain conditions BibTeX may decide to cite
+SagerPreproceedingsOfDNAEleven with a reference to the
+PRELIMINARYPROCEEDINGSINTERNATIONALDNAELEVEN citation. Under other
+conditions BibTeX will cite SagerPreproceedingsOfDNAEleven with the
+information from PRELIMINARYPROCEEDINGSINTERNATIONALDNAELEVEN inserted
+directly as text. Since ResumeTeX does not use citation numbers, it can
+only have the second type of crossreferencing. Thus, code relevant to
+the first senario in unsrt.bib has been commented out.
+<p></p>
+
+<p>resumetex.bst is also the file which describes the required and
+optional fields for the entries @goal, @academicschool, @job, @skill,
+@reference. If you need to add new tags or change the fields, then this
+file is where these modifications need to be made, however you will
+have to program this in BibTex's postscript like langage. For
+information about programming in BibTeX see section 5 of "Designing
+BibTeX Styles" by Oren Patashnik.
+</p>
+
+<h3>resumetex_format1.sty and resumetex_format2.sty</h3>These files
+impose some sort of text formatting on how the entries in the .bib file
+are displayed. Making a new one of these files is the easiest way to
+change how your resume looks.
+<p>Thanks to Didier Verna <a href="http://www.lrde.epita.fr/%7Edidier/comp/development/software.php#curve">CurVe (http://www.lrde.epita.fr/~didier/comp/development/software.php#curve)</a>, Miklos Csuros (<a href="http://www.iro.umontreal.ca/%7Ecsuros/latex.html">http://www.iro.umontreal.ca/~csuros/latex.html</a>) and Isabelle Hurbain (<a href="http://www.isabelle-hurbain.com/soft/index.en.html">http://www.isabelle-hurbain.com/soft/index.en.html</a>) whose code gave me the inspiration for ResumeTeX.</p>
+
+
+<div align="center">
+  <div>
+    <hr size="2" width="100%"><center><font face="arial,helvetica" size="1">
+    <p>Send comments or questions to: <a target="_blank" href="https://mail.google.com/mail?view=cm&amp;tf=0&amp;to=sagerj@acm.org">sagerj@acm.org</a><br>
+    Copyright 2005 Jennifer Sager</p>
+    </font></center>
+  </div>
+</div>
+
+<center>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+var sc_project=1091601; 
+var sc_invisible=0; 
+var sc_partition=9; 
+var sc_security="de80392f"; 
+</script>
+<script type="text/javascript" language="javascript" src="resumetex_fichiers/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img src="resumetex_fichiers/counter.png" alt="counter" border="0"></a> </noscript>
+<!-- End of StatCounter Code -->
+<br>
+Visitors since November 29, 2005
+</center>
+
+</body></html>

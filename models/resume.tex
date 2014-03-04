@@ -1,0 +1,52 @@
+%
+% File created by Jennifer A. Sager (sagerj@cs.unm.edu)
+% September 17, 2005
+%
+
+\documentclass{resumetex}
+\usepackage{mathptmx}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[colorlinks,bookmarks=true]{hyperref}
+
+% include one of the resumetex style packages
+\usepackage{resumetex_format1}  % uncomment this to use the resumetex_format1 style
+%\usepackage{resumetex_format2}  % uncomment this to use the resumetex_format2 style
+
+\hypersetup{
+  pdftitle = {Jennifer A. Sager - Resume},
+  pdfkeywords = {resume, cv, computer science},
+  pdfauthor = {Jennifer A. Sager}
+}
+
+% ------ Title --------------------------------------------------------
+
+\leftheader{\href{mailto:sagerj@acm.org}{\texttt{sagerj@acm.org}}}
+\rightheader{\url{http://www.cs.unm.edu/~sagerj}}
+\title{Jennifer A. Sager}
+\subtitle{}
+
+% ------ Document --------------------------------------------------------
+
+\begin{document}
+
+\resumedata{resume,publications}
+\input{resume.bbl}
+
+\makeheaders[t]
+\maketitle
+
+\makerubric{goal}
+\makerubric{experience}
+\makerubric{education}
+\makerubric{publications}
+\makerubric{skills}
+\makerubric{software}
+\makerubric{references}
+
+\end{document}
+
+
+

@@ -1,0 +1,137 @@
+%%% cv.ltx
+
+%% Author:        Didier Verna <didier@lrde.epita.fr>
+%% Maintainer:    Didier Verna <didier@lrde.epita.fr>
+%% Created:       Fri May 21 18:07:48 1999 under XEmacs 21.2 (beta 12)
+%% Last Revision: Mon Jul 12 12:00:43 1999
+
+
+%%% Commentary:
+
+%% Contents management by FCM version 0.1.
+
+%\typein[\draftorfinal]{Please specify draft or final (draft by default):}
+%\ifx\draftorfinal\empty
+%  \def\draftorfinal{draft}
+%\fi
+
+\newcommand{\EnAnglais}{english}
+\newcommand{\EnFrancais}{french}
+
+\newcommand{\EnQuelleLangue}{\EnAnglais} % 0 Anglais, 1 Francais
+\documentclass[\EnFrancais,a4paper,skipsamekey]{curve}
+
+
+\NeedsTeXFormat{LaTeX2e}
+\usepackage[a4paper,nohead,nofoot,hmargin=1.5cm,vmargin=1cm]{geometry}
+\usepackage{floatflt}
+\usepackage{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+
+\usepackage{graphicx}
+
+\usepackage[colorlinks, urlcolor=blue]{hyperref}
+
+%\photo[r]{image}
+\photoscale{0.12}
+
+\leftheader{\large\textbf{GAEL REINAUDI}\\
+\normalsize
+110 Morningside drive \#35, New York NY-10027 - USA\\
+  Tél: +1 (646) 422 9346\\
+  \href{mailto:gael@phys.columbia.edu}{\texttt{gael@phys.columbia.edu}}\\
+  \href%
+  {http://www.columbia.edu/}%
+  {%
+  \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{Cold Atoms Group in the }{}%
+  \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{Groupe Atomes Froids de la }{}%
+  Columbia University (New York)}%
+  }
+\rightheader{~}
+
+\titlefont{\fontfamily{pag}\selectfont\bfseries\Huge}
+\title{}
+
+\subtitlefont{\fontfamily{pag}\selectfont\itshape\huge}
+\subtitle{}
+
+\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
+\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large}
+\keyfont{\fontfamily{pag}\selectfont\bfseries}
+
+\usepackage{pifont}
+%\prefix{\ding{52}} % for check marks
+%\prefix{\ding{52}}
+\continuedname{~~(continued)}
+
+\setlength\rubricspace{10pt}
+\setlength\rubricafterspace{-0.4cm}
+\setlength\subrubricbeforespace{20pt}
+\setlength\subrubricspace{3pt}
+%\renewcommand\arraystretch{1.5}
+%\setlength\rubricafterspace{-20pt}
+
+\usepackage{color}
+\makeatletter
+% Cross the rubric titles:
+\def\@@rubrichead#1{%
+  \@rubricfont%
+  \makebox[0pt][l]{\colorbox[gray]{0.7}{\makebox[\linewidth-4\fboxsep]{}}}%
+  \makebox[\linewidth-2\fboxsep][c]{#1}}
+% or underline them:
+\iffalse
+\def\@@rubrichead#1{%
+  \@rubricfont%
+  \makebox[0pt][l]{\rule[-2mm]{\linewidth}{1mm}}%
+  \makebox[\linewidth-2\fboxsep][c]{#1}}
+\fi
+\def\@@subrubric#1{%
+  \rule{0bp}{\@beforespace}
+  {\@subrubricfont%
+    \makebox[1ex][l]{\colorbox[gray]{0.7}{\textcolor[gray]{0.7}{M}}}#1}%
+  \@subrubricmark{#1}}
+\makeatother
+
+%\usepackage{logos}
+%\usepackage{shortcuts}
+%\usepackage{dvl}
+
+\headerscale{.65}
+
+\makeatletter
+\def\mymulticol{\@nextentry\noalign{\gdef\@nextentry{}}
+  \multicolumn}
+\makeatother
+\pagestyle{empty}
+
+\begin{document}
+\makeheaders[t]
+
+\vspace{-0.4cm}
+
+\ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
+\makerubric{formation_en}
+\makerubric{NIW_skills_en}
+\makerubric{experience_en}
+\makerubric{divers_en}
+}{}
+
+\ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{
+\makerubric{formation_fr}
+\makerubric{experience_fr}
+\makerubric{divers_fr}}
+{}
+\newpage
+
+\makerubric{../publications}
+%\makerubric{references}
+
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{didier}
+
+\end{document}
+
+%%% cv.ltx ends here

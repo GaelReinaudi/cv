@@ -1,0 +1,156 @@
+%
+% File created by Jennifer A. Sager (sagerj@cs.unm.edu)
+% September 17, 2005
+%
+
+\ProvidesPackage{resumetex_format2}[2005/09/15 v1.1 ResumeTeX format 2]
+
+\RequirePackage[nohead,nofoot,hmargin=1.5cm,vmargin=1.5cm]{geometry}
+\RequirePackage{ifthen}
+
+% -------------------------------------------------------
+% - changing lengths
+% -------------------------------------------------------
+
+\setlength{\parindent}{0in}
+
+% curve defines \newblock as \let\newblock\par, but since we do not want new 
+% paragraphs where BibTeX generates newblocks, we redefine \newblock to mean 
+% nothing
+\gdef\newblock{}
+
+% -------------------------------------------------------
+% - rubric commands
+% -------------------------------------------------------
+
+% By default, do not place a bullet point or any other symbol before each entry
+\prefix{}
+
+\setlength{\rubricspace}{5pt}
+
+% Redefine Curve's rubric environment so that no space is inserted after key
+% and prefixes if they are empty.
+%
+% Also create bookmarks for each rubric
+\AtBeginDocument{\RequirePackage[bookmarks=true]{hyperref}}
+\newcounter{bookmarkcounter}
+\renewenvironment{rubric}[1]{%
+  %% \begin{rubric}
+  % create a section bookmark for each rubric title
+  \pdfbookmark{#1}{\alph{bookmarkcounter}}\stepcounter{bookmarkcounter}
+  \let\@tabcolsep\tabcolsep
+  \renewcommand{\tabcolsep}{0pt}
+  \def\raggedright{%
+    \@rightskip\@flushglue\rightskip\@rightskip\leftskip\z@skip}%
+  \def\raggedleft{%
+    \rightskip\z@skip\leftskip\@flushglue\parfillskip\z@skip}%
+  \gdef\@beforespace{0pt}%
+  \gdef\@nextentry{}%
+  \gdef\@previouskey{}
+  % changed \begin{longtable}{@{}kl@{~}X} because the {~} inserts a space
+  \begin{longtable}{@{}klX}
+    \@rubrichead{#1}
+    \endfirsthead
+    \@rubrichead{#1\@continuedname}
+    \endhead
+    \noalign{\@rubricmark{#1}}}{%
+    %% \end{rubric}
+    \@nextentry
+  \end{longtable}
+  \renewcommand{\tabcolsep}{\@tabcolsep}}
+
+% Places spaces after key or prefix only if they are non-empty 
+\renewcommand\@entry[2][]{%
+  \gdef\@nextentry{}\egroup% end of \noalign opened in \entry.
+  \vspace{10pt}% place 10 pts between every entry
+  \@key{\ifthenelse{\equal{#1}{}}{}{#1 ~ }}
+        &\ifthenelse{\equal{\@prefix}{}}{}{\@prefix ~ }
+        &#2\\}
+
+% Places spaces after key or prefix only if they are non-empty
+\renewcommand\@sentry[1][]{%
+  \gdef\@nextentry{\\}\egroup% end of \noalign opened in \entry.
+  \vspace{10pt}% place 10 pts between every entry
+  \@key{\ifthenelse{\equal{#1}{}}{}{#1 ~ }}
+        &\ifthenelse{\equal{\@prefix}{}}{}{\@prefix ~ }&}
+
+% Since the curve package is used for format rubrics, newlines cannot be used
+% in the resume entries.  Use \vfill instead.
+
+% define a new command, \goal, for displaying each goal
+% with the following arguments:
+% \goal
+%   {#1 description}
+\renewcommand{\goal}[1]{%
+  % center the goal
+  \entry*
+    ~ \hfill#1\hfill ~ }
+
+% define a new command, \job, for displaying each job in the work experience
+% section with the following arguments:
+% \job
+%   {#1 title}
+%   {#2 company}
+%   {#3 location}
+%   {#4 date}
+%   {#5 supervisor}
+%   {#6 description}
+\renewcommand{\job}[6]{%
+  \entry*
+    \textbf{#1}\hfill\textbf{#4}\vfill
+    \textbf{#2, #3}\vfill
+    \textit{Supervisor: #5}\vfill
+    #6}
+
+% define a new command, \degree, for displaying each school in the education
+% section with the following arguments:
+% \degree
+%   {#1 school}
+%   {#2 location}
+%   {#3 degree}
+%   {#4 date}
+%   {#5 description}
+\renewcommand{\degree}[5]{%
+  \entry*
+    \textbf{#1, #2}\hfill\textbf{(#4)}\vfill
+    \textbf{#3}\vfill
+    #5}
+
+% define a new command, \nodegree, for displaying each school in the education
+% section with the following arguments:
+% \nodegree
+%   {#1 school}
+%   {#2 location}
+%   {#3 date}
+%   {#4 description}
+\renewcommand{\nodegree}[4]{%
+  \entry*
+    \textbf{#1, #2}\hfill\textbf{(#3)}\vfill
+    #4}
+
+% define a new command, \skill, for displaying each skill
+% section with the following arguments:
+% \skill
+%   {#1 name}
+%   {#2 description}
+\renewcommand{\skill}[2]{%
+  \entry*
+    \textbf{#1: } #2}
+
+% define a new command, \reference, for displaying each reference
+% section with the following arguments:
+% \reference
+%   {#1 name}
+%   {#2 address}
+\renewcommand{\reference}[2]{%
+  \entry*
+    \textbf{#1}\vfill
+    #2}
+
+% define a new command, \publication, for displaying each publication reference
+% section with the following arguments:
+% \publication
+%   {#1 description}
+\renewcommand{\publication}[1]{%
+  \entry*
+  #1}

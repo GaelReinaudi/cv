@@ -1,0 +1,116 @@
+%%% cv.ltx
+
+%% Author:        Didier Verna <didier@lrde.epita.fr>
+%% Maintainer:    Didier Verna <didier@lrde.epita.fr>
+%% Created:       Fri May 21 18:07:48 1999 under XEmacs 21.2 (beta 12)
+%% Last Revision: Mon Jul 12 12:00:43 1999
+
+
+%%% Commentary:
+
+%% Contents management by FCM version 0.1.
+
+%\typein[\draftorfinal]{Please specify draft or final (draft by default):}
+%\ifx\draftorfinal\empty
+%  \def\draftorfinal{draft}
+%\fi
+
+\NeedsTeXFormat{LaTeX2e}
+\documentclass[french,a4paper,skipsamekey]{curve}
+\usepackage[a4paper,nohead,nofoot,hmargin=1.5cm,vmargin=1.5cm]{geometry}
+\usepackage{floatflt}
+\usepackage{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+
+\usepackage{graphicx}
+
+\usepackage[colorlinks]{hyperref}
+
+\photo[r]{image}
+\photoscale{0.12}
+
+\leftheader{\textbf{Didier Verna}\\
+  \href{http://www.epita.fr}{EPITA} / \href{http://www.lrde.epita.fr}{LRDE}\\
+  14-16, rue Voltaire, 94276 Le Kremlin Bicêtre\\
+  Tél: +33 (1) 44 08 01 85, Fax: +33 (1) 53 14 59 22
+  \href{mailto:didier@lrde.epita.fr}{\texttt{didier@lrde.epita.fr}},
+  \href{mailto:didier@xemacs.org}{\texttt{didier@xemacs.org}}\\
+  \href{http://www.lrde.epita.fr/~didier}{%
+    \texttt{http://www.lrde.epita.fr/\~{}didier}}\\
+  37 ans, Marié, deux enfants}
+\rightheader{~}
+
+\titlefont{\fontfamily{pag}\selectfont\bfseries\Huge}
+\title{Enseignant-Chercheur en Informatique}
+
+\subtitlefont{\fontfamily{pag}\selectfont\itshape\huge}
+\subtitle{Ingénieur et Docteur de l'ENST}
+
+\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
+\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large}
+\keyfont{\fontfamily{pag}\selectfont\bfseries}
+
+\usepackage{pifont}
+\prefix{\ding{52}}
+\continuedname{~~(suite)}
+
+%\setlength\rubricspace{20pt}
+%\setlength\rubricafterspace{10pt}
+%\setlength\subrubricbeforespace{20pt}
+%\setlength\subrubricspace{3pt}
+%\renewcommand\arraystretch{1.5}
+%\setlength\rubricafterspace{-20pt}
+
+\usepackage{color}
+\makeatletter
+% Cross the rubric titles:
+\def\@@rubrichead#1{%
+  \@rubricfont%
+  \makebox[0pt][l]{\colorbox[gray]{0.7}{\makebox[\linewidth-4\fboxsep]{}}}%
+  \makebox[\linewidth-2\fboxsep][c]{#1}}
+% or underline them:
+\iffalse
+\def\@@rubrichead#1{%
+  \@rubricfont%
+  \makebox[0pt][l]{\rule[-2mm]{\linewidth}{1mm}}%
+  \makebox[\linewidth-2\fboxsep][c]{#1}}
+\fi
+\def\@@subrubric#1{%
+  \rule{0bp}{\@beforespace}
+  {\@subrubricfont%
+    \makebox[1ex][l]{\colorbox[gray]{0.7}{\textcolor[gray]{0.7}{M}}}#1}%
+  \@subrubricmark{#1}}
+\makeatother
+
+\usepackage{logos}
+\usepackage{shortcuts}
+\usepackage{dvl}
+
+\headerscale{.55}
+
+\makeatletter
+\def\mymulticol{\@nextentry\noalign{\gdef\@nextentry{}}
+  \multicolumn}
+\makeatother
+\pagestyle{plain}
+
+\begin{document}
+\makeheaders[t]
+\maketitle
+
+\makerubric{experience}
+\makerubric{competences}
+\makerubric{formation}
+\makerubric{divers}
+\makerubric{publications}
+\makerubric{references}
+
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{didier}
+
+\end{document}
+
+%%% cv.ltx ends here

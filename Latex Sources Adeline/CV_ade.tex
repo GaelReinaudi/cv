@@ -1,0 +1,147 @@
+%%% cv.ltx
+
+%% Author:        Didier Verna <didier@lrde.epita.fr>
+%% Maintainer:    Didier Verna <didier@lrde.epita.fr>
+%% Created:       Fri May 21 18:07:48 1999 under XEmacs 21.2 (beta 12)
+%% Last Revision: Mon Jul 12 12:00:43 1999
+
+
+%%% Commentary:
+
+%% Contents management by FCM version 0.1.
+
+%\typein[\draftorfinal]{Please specify draft or final (draft by default):}
+%\ifx\draftorfinal\empty
+%  \def\draftorfinal{draft}
+%\fi
+
+\newcommand{\EnAnglais}{0}
+\newcommand{\EnFrancais}{1}
+
+\newcommand{\EnQuelleLangue}{\EnAnglais} % 0 Anglais, 1 Francais
+\documentclass[english,letter,skipsamekey]{curve}
+
+\NeedsTeXFormat{LaTeX2e}
+\usepackage[a4paper,nohead,nofoot,hmargin=1.3cm,vmargin=0.8cm]{geometry}
+\usepackage{floatflt}
+\usepackage{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+\usepackage{amsmath}
+
+\usepackage{graphicx}
+
+\usepackage[colorlinks]{hyperref}
+
+\photo[r]{image}
+\photoscale{0.13}
+
+\leftheader{\large\textbf{ADELINE ~ MONZIER %~ (%
+%\ifthenelse{\EnQuelleLangue = \EnFrancais}{%
+%11 janvier 1980%
+%}{%
+%January 11$^{\text{th}}$ 1980}%
+%)%
+}\\
+\normalsize
+\ifthenelse{\EnQuelleLangue = \EnFrancais}{%
+65, rue Brancion, 75015 Paris - France\\
+Tél: +33 (0)6 07 65 70 40\\
+}{%
+352 West 117th street, New York NY-10029 - USA\\
+  Tel: +1 (646) 422 9348 / +33 6 07 65 70 40\\ 
+  }
+  \href{mailto:adeline.monzier@unifrance.org}{\texttt{adeline.monzier@unifrance.org}}%
+%  \\
+%  \href%
+%  {http://www.europa-distribution.org/}%
+%  {Europa Distribution}%
+ }
+
+\rightheader{~}
+
+\titlefont{\fontfamily{pag}\selectfont\bfseries\Huge}
+\title{}
+
+\subtitlefont{\fontfamily{pag}\selectfont\itshape\huge}
+\subtitle{}
+
+\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
+\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large}
+\keyfont{\fontfamily{pag}\selectfont\bfseries}
+
+\usepackage{pifont}
+%\prefix{\ding{52}}
+%\prefix{}
+\continuedname{~~(continued)}
+
+\setlength\rubricspace{10pt}
+%\setlength\rubricafterspace{-0.4cm}
+\setlength\subrubricbeforespace{25pt}
+\setlength\subrubricspace{5pt}
+%\renewcommand\arraystretch{1.5}
+%\setlength\rubricafterspace{-20pt}
+
+\usepackage{color}
+\makeatletter
+% Cross the rubric titles:
+\def\@@rubrichead#1{%
+  \@rubricfont%
+  \makebox[0pt][l]{\colorbox[gray]{0.7}{\makebox[\linewidth-4\fboxsep]{}}}%
+  \makebox[\linewidth-2\fboxsep][c]{#1}}
+% or underline them:
+\iffalse
+\def\@@rubrichead#1{%
+  \@rubricfont%
+  \makebox[0pt][l]{\rule[-2mm]{\linewidth}{1mm}}%
+  \makebox[\linewidth-2\fboxsep][c]{#1}}
+\fi
+\def\@@subrubric#1{%
+  \rule{0bp}{\@beforespace}
+  {\@subrubricfont%
+    \makebox[1ex][l]{\colorbox[gray]{0.7}{\textcolor[gray]{0.7}{M}}}#1}%
+  \@subrubricmark{#1}}
+\makeatother
+
+%\usepackage{logos}
+%\usepackage{shortcuts}
+%\usepackage{dvl}
+
+\headerscale{.65}
+
+\makeatletter
+\def\mymulticol{\@nextentry\noalign{\gdef\@nextentry{}}
+  \multicolumn}
+\makeatother
+\pagestyle{empty}
+
+\begin{document}
+\makeheaders[t]
+
+\vspace{-1.cm}
+
+\ifthenelse{\EnQuelleLangue = \EnAnglais}{
+\makerubric{experience_en}
+\makerubric{formation_en}
+\makerubric{divers_en}
+}{}
+
+\ifthenelse{\EnQuelleLangue = \EnFrancais}{
+\makerubric{experience_fr}
+\makerubric{formation_fr}
+\makerubric{divers_fr}
+}{}
+
+\newpage
+
+%\makerubric{publications}
+%\makerubric{references}
+
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{didier}
+
+\end{document}
+
+%%% cv.ltx ends here
