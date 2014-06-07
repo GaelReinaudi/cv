@@ -5,38 +5,9 @@ Version=2
 [SessionInfo]
 ActiveTab=2
 FrameCount=7
-ActiveFrame=1
+ActiveFrame=0
 
 [Frame0]
-Columns=1
-Rows=1
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-8
-MaxPos.y=-30
-NormalPos.left=46
-NormalPos.top=46
-NormalPos.right=719
-NormalPos.bottom=339
-Class=CLatexEdit
-Document=CV_ade.tex
-
-[Frame0_Row0]
-cyCur=234
-cyMin=10
-
-[Frame0_Col0]
-cxCur=636
-cxMin=10
-
-[Frame0_View0,0]
-Cursor.row=37
-Cursor.column=16
-TopSubLine=30
-
-[Frame1]
 Columns=1
 Rows=1
 Flags=2
@@ -52,18 +23,47 @@ NormalPos.bottom=403
 Class=CLatexEdit
 Document=experience_en.tex
 
+[Frame0_Row0]
+cyCur=534
+cyMin=10
+
+[Frame0_Col0]
+cxCur=1022
+cxMin=10
+
+[Frame0_View0,0]
+Cursor.row=132
+Cursor.column=31
+TopSubLine=114
+
+[Frame1]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=46
+NormalPos.top=46
+NormalPos.right=719
+NormalPos.bottom=339
+Class=CLatexEdit
+Document=CV_ade.tex
+
 [Frame1_Row0]
-cyCur=392
+cyCur=234
 cyMin=10
 
 [Frame1_Col0]
-cxCur=1373
+cxCur=636
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=122
-Cursor.column=25
-TopSubLine=114
+Cursor.row=37
+Cursor.column=16
+TopSubLine=30
 
 [Frame2]
 Columns=1
@@ -90,9 +90,9 @@ cxCur=899
 cxMin=10
 
 [Frame2_View0,0]
-Cursor.row=17
-Cursor.column=16
-TopSubLine=4
+Cursor.row=20
+Cursor.column=14
+TopSubLine=6
 
 [Frame3]
 Columns=1

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.1.18)  11 FEB 2013 09:32
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.1.18)  7 JUN 2014 01:49
 entering extended mode
 **CV.tex
 ("F:\Gael\CVs latex\Latex Sources - Quant\CV.tex"
@@ -453,19 +453,19 @@ Package longtable Warning: Column widths have changed
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_skills_en.tex"
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 2 on input line 32.
+(longtable)                in table 2 on input line 28.
 
 ) ("F:\Gael\CVs latex\Latex Sources - Quant\quant_experience_en.tex")
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_experience_en.tex")
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_experience_en.tex")
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_experience_en.tex"
-Overfull \hbox (4.00919pt too wide) in paragraph at lines 35--53
+Overfull \hbox (4.00919pt too wide) in paragraph at lines 45--62
 [][]| 
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 3 on input line 67.
+(longtable)                in table 3 on input line 76.
 
 ) ("F:\Gael\CVs latex\Latex Sources - Quant\quant_divers_en.tex")
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_divers_en.tex")
@@ -499,7 +499,7 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
 Here is how much of TeX's memory you used:
  6456 strings out of 495276
  99064 string characters out of 3179864
- 188148 words of memory out of 3000000
+ 189115 words of memory out of 3000000
  9469 multiletter control sequences out of 15000+200000
  26976 words of font info for 38 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -516,7 +516,7 @@ nts/type1/urw/courier/ucrr8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1
 atino/uplbi8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/u
 plr8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on CV.pdf (2 pages, 147700 bytes).
+Output written on CV.pdf (2 pages, 148922 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  8 named destinations out of 1000 (max. 500000)
