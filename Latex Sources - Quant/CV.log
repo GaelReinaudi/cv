@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.1.18)  7 JUN 2014 01:49
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.1.18)  12 JUN 2014 00:26
 entering extended mode
 **CV.tex
 ("F:\Gael\CVs latex\Latex Sources - Quant\CV.tex"
@@ -459,13 +459,13 @@ Package longtable Warning: Column widths have changed
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_experience_en.tex")
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_experience_en.tex")
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_experience_en.tex"
-Overfull \hbox (4.00919pt too wide) in paragraph at lines 45--62
+Overfull \hbox (4.00919pt too wide) in paragraph at lines 30--47
 [][]| 
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 3 on input line 76.
+(longtable)                in table 3 on input line 73.
 
 ) ("F:\Gael\CVs latex\Latex Sources - Quant\quant_divers_en.tex")
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_divers_en.tex")
@@ -516,7 +516,7 @@ nts/type1/urw/courier/ucrr8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1
 atino/uplbi8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/u
 plr8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on CV.pdf (2 pages, 148922 bytes).
+Output written on CV.pdf (2 pages, 149379 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  8 named destinations out of 1000 (max. 500000)
