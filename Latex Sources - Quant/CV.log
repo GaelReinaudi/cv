@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.1.18)  12 JUN 2014 00:26
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.1.18)  12 JUN 2014 01:12
 entering extended mode
 **CV.tex
 ("F:\Gael\CVs latex\Latex Sources - Quant\CV.tex"
@@ -459,13 +459,13 @@ Package longtable Warning: Column widths have changed
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_experience_en.tex")
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_experience_en.tex")
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_experience_en.tex"
-Overfull \hbox (4.00919pt too wide) in paragraph at lines 30--47
+Overfull \hbox (4.00919pt too wide) in paragraph at lines 39--56
 [][]| 
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 3 on input line 73.
+(longtable)                in table 3 on input line 82.
 
 ) ("F:\Gael\CVs latex\Latex Sources - Quant\quant_divers_en.tex")
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_divers_en.tex")
@@ -499,11 +499,11 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
 Here is how much of TeX's memory you used:
  6456 strings out of 495276
  99064 string characters out of 3179864
- 189115 words of memory out of 3000000
+ 190115 words of memory out of 3000000
  9469 multiletter control sequences out of 15000+200000
  26976 words of font info for 38 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,14n,36p,216b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,14n,36p,216b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
 {e:/Program Files (x86)/MiKTeX 2.8/fonts/enc/dvips/fontname/8r.enc}<e:/Progra
 m Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/Program F
 iles (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb><e:/Program Files
@@ -516,7 +516,7 @@ nts/type1/urw/courier/ucrr8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1
 atino/uplbi8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/u
 plr8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on CV.pdf (2 pages, 149379 bytes).
+Output written on CV.pdf (2 pages, 149854 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  8 named destinations out of 1000 (max. 500000)
