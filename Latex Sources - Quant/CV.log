@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.1.18)  12 JUN 2014 01:12
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.1.18)  13 JUN 2014 18:14
 entering extended mode
 **CV.tex
 ("F:\Gael\CVs latex\Latex Sources - Quant\CV.tex"
@@ -473,7 +473,7 @@ Package longtable Warning: Column widths have changed
 ("F:\Gael\CVs latex\Latex Sources - Quant\quant_divers_en.tex"
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4 on input line 14.
+(longtable)                in table 4 on input line 15.
 
 ) [1
 
@@ -516,7 +516,7 @@ nts/type1/urw/courier/ucrr8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1
 atino/uplbi8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/u
 plr8a.pfb><e:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on CV.pdf (2 pages, 149854 bytes).
+Output written on CV.pdf (2 pages, 149906 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  8 named destinations out of 1000 (max. 500000)
