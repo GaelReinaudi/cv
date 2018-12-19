@@ -16,24 +16,24 @@ MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
 MaxPos.y=-30
-NormalPos.left=75
-NormalPos.top=75
-NormalPos.right=780
-NormalPos.bottom=451
+NormalPos.left=0
+NormalPos.top=0
+NormalPos.right=1244
+NormalPos.bottom=366
 Class=CLatexEdit
-Document=quant_skills_en.tex
+Document=quant_divers_en.tex
 
 [Frame0_Row0]
-cyCur=317
+cyCur=307
 cyMin=10
 
 [Frame0_Col0]
-cxCur=668
+cxCur=1207
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=15
-Cursor.column=79
+Cursor.row=6
+Cursor.column=17
 TopSubLine=0
 
 [Frame1]
@@ -45,15 +45,15 @@ MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
 MaxPos.y=-30
-NormalPos.left=0
-NormalPos.top=0
-NormalPos.right=1244
-NormalPos.bottom=366
+NormalPos.left=75
+NormalPos.top=75
+NormalPos.right=780
+NormalPos.bottom=451
 Class=CLatexEdit
-Document=quant_divers_en.tex
+Document=quant_skills_en.tex
 
 [Frame1_Row0]
-cyCur=661
+cyCur=534
 cyMin=10
 
 [Frame1_Col0]
@@ -61,8 +61,8 @@ cxCur=1022
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=6
-Cursor.column=17
+Cursor.row=11
+Cursor.column=10
 TopSubLine=0
 
 [Frame2]
@@ -90,9 +90,9 @@ cxCur=1232
 cxMin=10
 
 [Frame2_View0,0]
-Cursor.row=44
-Cursor.column=21
-TopSubLine=21
+Cursor.row=0
+Cursor.column=0
+TopSubLine=0
 
 [Frame3]
 Columns=1
@@ -148,9 +148,9 @@ cxCur=1232
 cxMin=10
 
 [Frame4_View0,0]
-Cursor.row=47
+Cursor.row=6
 Cursor.column=1
-TopSubLine=34
+TopSubLine=6
 
 [Frame5]
 Columns=1
