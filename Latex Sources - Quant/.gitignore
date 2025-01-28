@@ -1,3 +1,7 @@
 *.synctex
 /quant_skills_en.log
 /CV.log
+/CV.aux
+/CV.out
+/CV.pdf
+/texput.log

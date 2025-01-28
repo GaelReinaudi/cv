@@ -2,7 +2,7 @@
 
 %% Author:        Didier Verna <didier@lrde.epita.fr>
 %% Maintainer:    Didier Verna <didier@lrde.epita.fr>
-%% Created:       Fri May 21 18:07:48 1999 under XEmacs 21.2 (beta 12)
+%% Created:       Fri 21 18:07:48 1999 under XEmacs 21.2 (beta 12)
 %% Last Revision: Mon Jul 12 12:00:43 1999
 
 
@@ -26,7 +26,7 @@ skipsamekey]{curve}
 
 
 \NeedsTeXFormat{LaTeX2e}
-\usepackage[a4paper,nohead,nofoot,hmargin=1.0cm,vmargin=0.6cm]{geometry}
+\usepackage[nohead,nofoot,hmargin=1.0cm,vmargin=0.6cm]{geometry}
 \usepackage{floatflt}
 \usepackage{babel}
 \usepackage[latin1]{inputenc}
@@ -121,11 +121,13 @@ skipsamekey]{curve}
 \begin{document}
 \makeheaders[t]
 
-\vspace{-1.0cm}
+\vspace{-1.2cm}
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
 \makerubric{quant_formation_en}
+\vspace{-0.2cm}
 \makerubric{quant_skills_en}
+\vspace{-0.2cm}
 \makerubric{quant_experience_en}
 \makerubric{quant_divers_en}
 }{}
