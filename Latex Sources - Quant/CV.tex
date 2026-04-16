@@ -36,6 +36,13 @@ skipsamekey]{curve}
 \usepackage{graphicx}
 
 \usepackage[colorlinks, urlcolor=blue]{hyperref}
+\usepackage{enumitem}
+\newenvironment{cvitems}{%
+  \begin{itemize}[noitemsep, topsep=2pt, partopsep=0pt, parsep=0pt,
+    leftmargin=1.4em, label={$\diamond$}]%
+}{%
+  \end{itemize}%
+}
 
 %\photo[r]{image}
 \photoscale{0.12}
