@@ -14,18 +14,18 @@
       across different domains; the harness abstracts this into consistent agentic pipelines. \\
       $\diamond$~~Drove full-company adoption of AI-native engineering: Cursor, MCP-enabled tooling, \\
       and agent-based systems used daily across coding, architecture, debugging, testing, \\
-      and technical research, not just code generation. \\
+      and technical research, including production incident investigation: foreaging live AWS logs and crash traces to automatically zero-in on root causes \\
+      , not "just code generation". \\
       $\diamond$~~Created \href{https://connectory.ai}{\texttt{Connectory.ai}} (SlopBuster) from the ground up: a repo-aware AI governance \\
       and PR review platform; reviewed thousands of PRs across dozens of repos \\
       in daily use across all teams, catching AI slop at scale. \\
       $\diamond$~~Built a repository intelligence system modeling each codebase's purpose, architecture, \\
       patterns, weak points, and engineering intent; context feeds directly into PR review \\
       so code is evaluated against actual repository goals rather than generic coding rules. \\
-      $\diamond$~~Architected spec-driven development generating repository-fitting specifications \\
-      and implementation guidance; AI-assisted development follows local architecture and constraints. \\
-      $\diamond$~~Designed cross-repo intelligence so agents detect issues invisible to single-repo tools: \\
-      API contract drift, duplicated abstractions, framework misuse, and fixes violating broader goals. \\
-      $\diamond$~~Built org- and repo-level analytics dashboards: contribution patterns, code activity, \\
+      $\diamond$~~Built an agentic "spec" generator for spec-driven development: rather than generic specs, \\
+      it adapts to existing repository structure, patterns, and overall mission to produce implementation \\
+      guidance that fits the codebase and its actual goals. \\
+      $\diamond$~~Designed cross-repo intelligence to compile org-level analytics dashboards: contribution patterns, code activity, \\
       quality signals, and engineering trends, giving executives visibility across teams. \\
       $\diamond$~~Designed and taught a hands-on class on AI-native development workflows (Cursor): \\
       automated testing, multi-file reasoning, debugging, architecture documentation. \\
@@ -40,28 +40,24 @@
     \begin{tabular}{>{}l<{}@{\hspace{5pt}}%
     p{.002\textwidth}}
       $\diamond$~~2-month embedded engagement: established AI-native engineering practices across the team. \\
-      $\diamond$~~Built a self-introspecting testing platform for the firm's data pipeline. \\
+      $\diamond$~~Built a self-introspecting testing platform for the firm's data pipeline evaluation. \\
     \end{tabular}%
    }
 %
 \entry*[2021-2024]%
 \textbf{Sinecure.AI (New York):} CTO and Co-Founder \href{https://sinecure.ai}{\texttt{https://sinecure.ai}}
-\par{Built the full backend and Python stack from a blank repo, owning all architecture,
-deployment, and data pipelines. Brought in frontend contractors and junior devs
-over time to scale out features.}
+\par{Built the full backend and Python stack from scratch, owning all architecture,
+deployment, and data pipelines.}
 \par
   {\renewcommand{\arraystretch}{1}%
     \begin{tabular}{>{}l<{}@{\hspace{5pt}}%
     p{.002\textwidth}}
-      $\diamond$~~Designed and built agentic AI systems for domain-specific research: \\
+      $\diamond$~~Designed and built agentic AI systems for domain-specific research:
       multi-step reasoning workflows, \\
       retrieval pipelines, structured extraction, and orchestration across heterogeneous tools and data sources. \\
-      $\diamond$~~Architected multi-agent orchestration framework with structured communication protocols between \\
-      specialized agents, enabling cross-domain research synthesis and structured insight extraction. \\
-      $\diamond$~~Built evaluation and testing mechanisms for LLM-powered workflows: benchmark design, robustness \\
-      validation, and output quality assessment to catch brittle behavior in production deployments. \\
+      $\diamond$~~Architected a plugin based framework to crawl, store, connect and synthesize data from disparate sources, enabling  flexible insight extraction from a graph of knowledge. \href{http://tinyurl.com/36dcwevf}{\texttt{tinyurl.com/36dcwevf}} \\
       $\diamond$~~Built scalable, plugin-driven Python framework; typed Pydantic models, Django/Hasura/GraphQL data \\
-      layer; full-stack delivery across GCP, Kubernetes, CloudRun. \href{http://tinyurl.com/36dcwevf}{\texttt{tinyurl.com/36dcwevf}} \\
+      layer; full-stack delivery across GCP, Kubernetes, CloudRun. \\
       $\diamond$~~Recruited and led a growing engineering team; ran technology meetings for clients, investors, and board.
     \end{tabular}%
    }
@@ -85,12 +81,9 @@ over time to scale out features.}
   {\renewcommand{\arraystretch}{1}%
     \begin{tabular}{>{}l<{}@{\hspace{5pt}}%
     p{.002\textwidth}}
-    $\diamond$~~Established a production AI/ML research and deployment ecosystem for \\
-    time-series prediction: model experimentation, evaluation, and operationalization on live data. \\
-    $\diamond$~~Built Temporal Convolutional Network models trained and evaluated continuously on live market data. \\
+    $\diamond$~~Established a production AI/ML protocal to allow an ecosystem of heterogenous live data to cross-polinate training and predicitons.
+    $\diamond$~~Built Temporal Convolutional Network models trained and evaluated continuously on live data. \\
     \href{http://tinyurl.com/yskxkrvx}{\texttt{tinyurl.com/yskxkrvx}} \\
-    $\diamond$~~Pioneered deployment of deep neural networks and early LLM-based approaches \\
-    for financial data processing. \\
   \end{tabular}%
    }
 %
@@ -108,7 +101,7 @@ Worked intimately with the PM on strategy selection, risk, and research directio
       against live and historical market data. \\
       $\diamond$~~Adapted CNN and RNN architectures to identify and optimize trading signals in equities and ETFs. \\
       $\diamond$~~Developed an innovative technique to encode Level~2 market data as images for Spatio-Temporal \\
-      Convolutional Network analysis. \href{http://tinyurl.com/4c3fbzev}{\texttt{tinyurl.com/4c3fbzev}} \\
+      Convolutional Network analysis, leveraging the power of vision models. \href{http://tinyurl.com/4c3fbzev}{\texttt{tinyurl.com/4c3fbzev}} \\
     \end{tabular}%
    }
 %
@@ -128,7 +121,7 @@ Worked intimately with the PM on strategy selection, risk, and research directio
 \subrubric{Hands-on Experimental Research:}
 \entry*[2008-2013]%
 \textbf{Columbia University (New York):} Postdoc and Associate Research Scientist in Atomic Physics
-\par{Built from scratch an entire quantum physics experiment with advanced data analysis techniques.}
+\par{Built from scratch an entire quantum physics experiment and the experiment control software that can perfomr live optimization of the physcal apparatus with advanced data analysis techniques, including evolutionarry algorithms.}
 %
 \entry*[2004-2008]%
 \textbf{\'Ecole Normale Sup\'erieure de Paris:} Ph.D., Laboratoire Kastler-Brossel
