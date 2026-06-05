@@ -1,0 +1,116 @@
+%%% cv.ltx
+
+%% Author:        Didier Verna <didier@lrde.epita.fr>
+%% Maintainer:    Didier Verna <didier@lrde.epita.fr>
+%% Created:       Fri May 21 18:07:48 1999 under XEmacs 21.2 (beta 12)
+%% Last Revision: Mon Jul 12 12:00:43 1999
+
+
+%%% Commentary:
+
+%% Contents management by FCM version 0.1.
+
+\newcommand{\EnAnglais}{english}
+\newcommand{\EnFrancais}{french}
+
+\newcommand{\EnQuelleLangue}{\EnAnglais} % english or french
+
+\documentclass[\EnQuelleLangue,%
+skipsamekey]{curve}
+
+\NeedsTeXFormat{LaTeX2e}
+\usepackage[nohead,nofoot,hmargin=1.0cm,vmargin=0.6cm]{geometry}
+\usepackage{floatflt}
+\usepackage{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+
+\usepackage{graphicx}
+
+\usepackage[colorlinks, urlcolor=blue]{hyperref}
+\renewcommand{\labelitemi}{$\diamond$}
+\newenvironment{cvitems}{%
+  \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}%
+    \setlength{\topsep}{2pt}\setlength{\partopsep}{0pt}%
+    \setlength{\leftmargin}{1.4em}%
+}{%
+  \end{itemize}%
+}
+
+%\photo[r]{image}
+\photoscale{0.13}
+
+\leftheader{\large\textbf{ADELINE MONZIER}\\
+\normalsize
+New York, NY\\
+(646) 422-9348\\
+  \href{mailto:adeline.harlemcinema@gmail.com}{\texttt{adeline.harlemcinema@gmail.com}}\\
+}
+
+\rightheader{~}
+
+\titlefont{\fontfamily{pag}\selectfont\bfseries\Huge}
+\title{}
+
+\subtitlefont{\fontfamily{pag}\selectfont\itshape\large}
+\subtitle{Film Programmer $|$ Transatlantic Cinema Strategist $|$ Cultural Partnerships \& Film Education Leader}
+
+\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
+\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large}
+\keyfont{\fontfamily{pag}\selectfont\bfseries}
+
+\usepackage{pifont}
+\continuedname{~~(continued)}
+
+\setlength\rubricspace{5pt}
+\setlength\rubricafterspace{-0.53cm}
+\setlength\subrubricbeforespace{15pt}
+\setlength\subrubricspace{0pt}
+
+\usepackage{color}
+\makeatletter
+\def\@@rubrichead#1{%
+  \@rubricfont%
+  \makebox[0pt][l]{\colorbox[gray]{0.7}{\makebox[\linewidth-4\fboxsep]{}}}%
+  \makebox[\linewidth-2\fboxsep][c]{#1}}
+\def\@@subrubric#1{%
+  \rule{0bp}{\@beforespace}
+  {\@subrubricfont%
+    \makebox[1ex][l]{\colorbox[gray]{0.7}{%
+    \phantom M%
+    }}#1}%
+  \@subrubricmark{#1}}
+\makeatother
+
+\headerscale{.65}
+
+\makeatletter
+\def\mymulticol{\@nextentry\noalign{\gdef\@nextentry{}}
+  \multicolumn}
+\makeatother
+\pagestyle{empty}
+
+\begin{document}
+\makeheaders[t]
+
+\vspace{-1.2cm}
+
+\ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
+\makerubric{ade_summary_en}
+\makerubric{ade_programs_en}
+\makerubric{ade_experience_en}
+\makerubric{ade_teaching_en}
+\makerubric{ade_formation_en}
+\makerubric{ade_divers_en}
+}{}
+
+\ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{
+\makerubric{experience_fr}
+\makerubric{formation_fr}
+\makerubric{divers_fr}
+}{}
+
+\end{document}
+
+%%% cv.ltx ends here

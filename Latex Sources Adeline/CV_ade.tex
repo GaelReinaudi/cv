@@ -2,7 +2,7 @@
 
 %% Author:        Didier Verna <didier@lrde.epita.fr>
 %% Maintainer:    Didier Verna <didier@lrde.epita.fr>
-%% Created:       Fri May 21 18:07:48 1999 under XEmacs 21.2 (beta 12)
+%% Created:       Fri 21 18:07:48 1999 under XEmacs 21.2 (beta 12)
 %% Last Revision: Mon Jul 12 12:00:43 1999
 
 
@@ -15,71 +15,85 @@
 %  \def\draftorfinal{draft}
 %\fi
 
-\newcommand{\EnAnglais}{0}
-\newcommand{\EnFrancais}{1}
+\newcommand{\EnAnglais}{english}
+\newcommand{\EnFrancais}{french}
 
 \newcommand{\EnQuelleLangue}{\EnAnglais} % 0 Anglais, 1 Francais
-\documentclass[english,letter,skipsamekey]{curve}
+
+\documentclass[\EnQuelleLangue,%
+%a4paper,%
+skipsamekey]{curve}
+
 
 \NeedsTeXFormat{LaTeX2e}
-\usepackage[a4paper,nohead,nofoot,hmargin=1.3cm,vmargin=0.8cm]{geometry}
+\usepackage[nohead,nofoot,hmargin=2.0cm,vmargin=0.6cm]{geometry}
 \usepackage{floatflt}
 \usepackage{babel}
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{palatino}
-\usepackage{amsmath}
 
 \usepackage{graphicx}
 
-\usepackage[colorlinks]{hyperref}
-
-\photo[r]{image}
-\photoscale{0.13}
-
-\leftheader{\large\textbf{ADELINE ~ MONZIER %~ (%
-%\ifthenelse{\EnQuelleLangue = \EnFrancais}{%
-%11 janvier 1980%
-%}{%
-%January 11$^{\text{th}}$ 1980}%
-%)%
-}\\
-\normalsize
-\ifthenelse{\EnQuelleLangue = \EnFrancais}{%
-65, rue Brancion, 75015 Paris - France\\
-Tél: +33 (0)6 07 65 70 40\\
+\usepackage[colorlinks, urlcolor=blue]{hyperref}
+% cvitems: use list (not enumitem itemize) so curve date/bullet columns stay aligned
+\newenvironment{cvitems}{%
+  \begin{list}{$\diamond$}{%
+    \setlength{\leftmargin}{1.5em}%
+    \setlength{\labelwidth}{0.9em}%
+    \setlength{\labelsep}{0.35em}%
+    \setlength{\topsep}{2pt}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\partopsep}{0pt}%
+  }%
 }{%
-352 West 117th street, New York NY-10029 - USA\\
-  Tel: +1 (646) 422 9348 / +33 6 07 65 70 40\\ 
-  }
-  \href{mailto:adeline.monzier@unifrance.org}{\texttt{adeline.monzier@unifrance.org}}%
-%  \\
-%  \href%
-%  {http://www.europa-distribution.org/}%
-%  {Europa Distribution}%
- }
+  \end{list}%
+}
+% Widest date key in this CV ï¿½ use in every rubric so bullets line up across sections
+\newcommand{\AdeNoentry}{\noentry{2024-present}}
 
+%\photo[r]{image}
+\photoscale{0.12}
+
+\leftheader{\large\textbf{ADELINE MONZIER}\\
+\normalsize
+New York, NY\\
+(646) 422-9348\\
+  \href{mailto:adeline.harlemcinema@gmail.com}{\texttt{adeline.harlemcinema@gmail.com}}\\
+%  \href%
+%  {http://www.columbia.edu/}%
+%  {%
+ % \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{Cold Atoms Group in the }{}%
+ % \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{Groupe Atomes Froids de la }{}%
+%  Columbia University (New York)
+  }%
+%  \\
+% 30 
+%  \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{years old}{}
+%  \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{ans}{}
+%  }
 \rightheader{~}
 
 \titlefont{\fontfamily{pag}\selectfont\bfseries\Huge}
 \title{}
 
-\subtitlefont{\fontfamily{pag}\selectfont\itshape\huge}
-\subtitle{}
+\subtitlefont{\fontfamily{pag}\selectfont\itshape\large}
+\subtitle{Film Festival Leader $|$ Youth \& Family Programming $|$ Transatlantic Cinema \& Education}
 
 \rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
 \subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large}
 \keyfont{\fontfamily{pag}\selectfont\bfseries}
 
 \usepackage{pifont}
-%\prefix{\ding{52}}
+%\prefix{\ding{44}}
 %\prefix{}
 \continuedname{~~(continued)}
 
-\setlength\rubricspace{10pt}
-%\setlength\rubricafterspace{-0.4cm}
-\setlength\subrubricbeforespace{25pt}
-\setlength\subrubricspace{5pt}
+\setlength\rubricspace{5pt}
+\setlength\rubricafterspace{-0.53cm}
+\setlength\subrubricbeforespace{15pt}
+\setlength\subrubricspace{0pt}
 %\renewcommand\arraystretch{1.5}
 %\setlength\rubricafterspace{-20pt}
 
@@ -100,7 +114,10 @@ Tél: +33 (0)6 07 65 70 40\\
 \def\@@subrubric#1{%
   \rule{0bp}{\@beforespace}
   {\@subrubricfont%
-    \makebox[1ex][l]{\colorbox[gray]{0.7}{\textcolor[gray]{0.7}{M}}}#1}%
+    \makebox[1ex][l]{\colorbox[gray]{0.7}{%
+    %\textcolor[gray]{0.7}{M}
+    \phantom M%
+    }}#1}%
   \@subrubricmark{#1}}
 \makeatother
 
@@ -119,24 +136,24 @@ Tél: +33 (0)6 07 65 70 40\\
 \begin{document}
 \makeheaders[t]
 
-\vspace{-1.cm}
+\vspace{-1.2cm}
 
-\ifthenelse{\EnQuelleLangue = \EnAnglais}{
-\makerubric{experience_en}
-\makerubric{formation_en}
-\makerubric{divers_en}
+\ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
+\makerubric{ade_summary_en}
+\makerubric{ade_strengths_en}
+\makerubric{ade_youth_en}
+\makerubric{ade_festival_en}
+\makerubric{ade_international_en}
+\makerubric{ade_teaching_en}
+\makerubric{ade_formation_en}
+\makerubric{ade_divers_en}
 }{}
 
-\ifthenelse{\EnQuelleLangue = \EnFrancais}{
+\ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{
 \makerubric{experience_fr}
 \makerubric{formation_fr}
-\makerubric{divers_fr}
-}{}
-
-\newpage
-
-%\makerubric{publications}
-%\makerubric{references}
+\makerubric{divers_fr}}
+{}
 
 %\nocite{*}
 %\bibliographystyle{plain}
