@@ -26,7 +26,7 @@ skipsamekey]{curve}
 
 
 \NeedsTeXFormat{LaTeX2e}
-\usepackage[nohead,nofoot,hmargin=2.0cm,vmargin=0.6cm]{geometry}
+\usepackage[nohead,nofoot,hmargin=1.5cm,vmargin=0.6cm]{geometry}
 \usepackage{floatflt}
 \usepackage{babel}
 \usepackage[latin1]{inputenc}
@@ -36,22 +36,13 @@ skipsamekey]{curve}
 \usepackage{graphicx}
 
 \usepackage[colorlinks, urlcolor=black, linkcolor=black]{hyperref}
-% cvitems: list (not enumitem) keeps curve date/bullet columns aligned
+\usepackage{enumitem}
 \newenvironment{cvitems}{%
-  \begin{list}{$\diamond$}{%
-    \setlength{\leftmargin}{1.5em}%
-    \setlength{\labelwidth}{0.9em}%
-    \setlength{\labelsep}{0.35em}%
-    \setlength{\topsep}{2pt}%
-    \setlength{\parsep}{0pt}%
-    \setlength{\itemsep}{0pt}%
-    \setlength{\partopsep}{0pt}%
-  }%
+  \begin{itemize}[noitemsep, topsep=2pt, partopsep=0pt, parsep=0pt,
+    leftmargin=1.4em, label={$\diamond$}]%
 }{%
-  \end{list}%
+  \end{itemize}%
 }
-% Widest date key in this CV -- use in every rubric so bullets line up across sections
-\newcommand{\AdeNoentry}{\noentry{2024-present}}
 
 %\photo[r]{image}
 \photoscale{0.12}
@@ -62,27 +53,16 @@ skipsamekey]{curve}
   \normalsize
   \href{mailto:adeline.harlemcinema@gmail.com}{adeline.harlemcinema@gmail.com}%
   \ -\ (646) 422 9348\ -\ New York, NY\\[3pt]%
-  {\subtitlefont\AdeSubtitle}\\[6pt]%
+  {\subtitlefont\AdeSubtitle}\\[4pt]%
 }
-%  \href%
-%  {http://www.columbia.edu/}%
-%  {%
- % \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{Cold Atoms Group in the }{}%
- % \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{Groupe Atomes Froids de la }{}%
-%  Columbia University (New York)
-  }%
-%  \\
-% 30 
-%  \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{years old}{}
-%  \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{ans}{}
-%  }
+
 \rightheader{~}
 
 \titlefont{\fontfamily{pag}\selectfont\bfseries\Huge}
 \title{}
 
 \subtitlefont{\fontfamily{pag}\selectfont\itshape\normalsize}
-\newcommand{\AdeSubtitle}{Film Programmer $|$ Film Education \& Family Programming\\%
+\newcommand{\AdeSubtitle}{Non-Profit Leadership $|$ Film Education \& Programming\\%
   Festival Operations $|$ Community Partnerships}
 \subtitle{}
 
@@ -95,12 +75,11 @@ skipsamekey]{curve}
 %\prefix{}
 \continuedname{~~(continued)}
 
-\setlength\headerspace{0pt}
-\setlength\rubricspace{2pt}
-\setlength\rubricafterspace{-0.62cm}
+\setlength\rubricspace{5pt}
+\setlength\rubricafterspace{-0.53cm}
 \setlength\subrubricbeforespace{15pt}
 \setlength\subrubricspace{0pt}
-%\renewcommand\arraystretch{1.5}
+\renewcommand\arraystretch{1.44}
 %\setlength\rubricafterspace{-20pt}
 
 \usepackage{color}
@@ -141,6 +120,7 @@ skipsamekey]{curve}
 
 \begin{document}
 \makeheaders[t]
+
 \vspace{-0.55cm}
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{

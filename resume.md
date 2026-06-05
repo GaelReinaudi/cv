@@ -1,16 +1,16 @@
 **ADELINE MONZIER**   
 adeline.harlemcinema@gmail.com \- (646) 422 9348  \- New York, NY
 
-Film Programmer | Film Education & Family Programming | Festival Operations | Community Partnerships
+Non-Profit Leadership | Film Education & Programming | Festival Operations | Community Partnerships
 
 **SUMMARY**  
 ---
 
 * Film executive and programmer with 20+ years of experience building film education, and family programming across NYC cinemas, festivals, schools, and cultural institutions.  
-* Leads student screenings and teacher professional development at Film at Lincoln Center, curates family-friendly series including Metrograph’s Screen Time and an afterschool film club;  co-founded Uptown Film Center, a nonprofit cinema arts and education center; and directed the festival Rendez-Vous with French Cinema for Unifrance at Film at Lincoln Center.  
-* Brings institutional leadership, festival operations, community partnerships, and deep transatlantic cinema expertise to programming that connects young audiences, educators, and families with international film.
+* Lead student screenings and teacher professional development at Film at Lincoln Center, curate family-friendly series including Metrograph’s Screen Time;  co-founded Uptown Film Center, a nonprofit cinema arts and education center; and directed the festival Rendez-Vous with French Cinema for Unifrance at Film at Lincoln Center.  
+* Bring institutional leadership, festival operations, community partnerships, and deep transatlantic cinema expertise to programming and events production that connect young audiences, educators, and families with international film.
 
-**FESTIVAL, PROGRAMMING & FILM EDUCATION**  
+**FESTIVAL, FILM EDUCATION, PROGRAMMING & EVENT PRODUCTION**  
 ---
 
 **Uptown Film Center 2024–present**  
@@ -23,14 +23,15 @@ Film Programmer | Film Education & Family Programming | Festival Operations | Co
    *Guest Programmer (Part-Time)*
 
 * Program Screen Time, a family-friendly series  
-* Curate first-runs and repertory series featuring filmmakers and talent including Juliette Binoche, Kleber Mendonça Filho, Ugo Bienvenu, Oliver Laxe, Alice Diop, Vicky Krieps, Alain Gomis   
+* Curate first-runs and repertory series featuring filmmakers and talent including Juliette Binoche, Kleber Mendonça Filho, Ugo Bienvenu, Oliver Laxe, Alice Diop, Vicky Krieps, Alain Gomis…  
 * Oversee licensing and operational delivery for the programs   
 * Identify and cultivate partners and community organizations for each series  
 * Act as filmmaker liaison, managing hospitality, Q\&As, and special events for each series  
+* Secure grants for series and international filmmakers’ travels  
     
   **Film at Lincoln Center 2023-present**  
   *Education Consultant, Student Screenings*  
-* Curate and organize free student screenings with film guides for middle schools, high schools, and colleges in coordination with FLC programming (in 2025/2026 : 16 screenings, 35 schools, 3500 students)  
+* Curate and organize free student screenings for middle schools, high schools, and colleges in coordination with FLC programming (in 2025/2026 : 16 screenings, 35 schools, 3500 students)  
 * Create film guides for students and teachers for each screening  
 * Source and invite a guest for each screening \- filmmaker, scholar, critic, or subject expert \- and lead the post-screening discussion  
 * Design and lead professional development days for NYC middle and high school teachers  
@@ -84,7 +85,7 @@ INTERNATIONAL FILM INDUSTRY AND DISTRIBUTION
 * Managed the French syndicate of 9 independent film distributors
 
 **Films Distribution / CNC / Cultural Services of the French Embassy in London 2003–2005**  
-*Sales Assistant / Assistant / Script Reader*
+*Assistant* 
 
 * Early-career roles in international sales, script reading, and French cultural diplomacy in London
 
@@ -99,7 +100,7 @@ INTERNATIONAL FILM INDUSTRY AND DISTRIBUTION
 **Afterschool Film Club for Tweens & Teens 2019–2023**  
 *Organizer & Animator*
 
-* Organized and led a virtual afterschool film club program for young audiences
+* Organized and led an afterschool film club program for tweens and teens 
 
 **Guest Speaker 2011–present**
 
@@ -109,7 +110,7 @@ INTERNATIONAL FILM INDUSTRY AND DISTRIBUTION
 **Jury Member 2016–2022**  
 *Sonoma IFF & IFP Week / French in Motion Jury*
 
-* Jury member at Sonoma IFF and ongoing pre-selector of 10 scripts per year for the French in Motion co-production market at Gotham's IFP Week
+* Jury member at Sonoma IFF and pre-selector of 10 scripts per year for the French in Motion co-production market at Gotham's IFP Week
 
 **Académie des Césars**   
 *Voting Member since 2022*
@@ -129,5 +130,6 @@ Master in Culture and Media Management (Paris & London)
 **LANGUAGES & CITIZENSHIP**  
 ---
 
-Bilingual French and English; fluent German; basic Spanish  
-Dual French-American Citizen  
+* Bilingual French and English; fluent German; basic Spanish  
+* Dual French-American Citizen  
+  
