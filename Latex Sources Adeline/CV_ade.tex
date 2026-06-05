@@ -35,8 +35,8 @@ skipsamekey]{curve}
 
 \usepackage{graphicx}
 
-\usepackage[colorlinks, urlcolor=blue]{hyperref}
-% cvitems: use list (not enumitem itemize) so curve date/bullet columns stay aligned
+\usepackage[colorlinks, urlcolor=black, linkcolor=black]{hyperref}
+% cvitems: list (not enumitem) keeps curve date/bullet columns aligned
 \newenvironment{cvitems}{%
   \begin{list}{$\diamond$}{%
     \setlength{\leftmargin}{1.5em}%
@@ -50,17 +50,20 @@ skipsamekey]{curve}
 }{%
   \end{list}%
 }
-% Widest date key in this CV � use in every rubric so bullets line up across sections
+% Widest date key in this CV -- use in every rubric so bullets line up across sections
 \newcommand{\AdeNoentry}{\noentry{2024-present}}
 
 %\photo[r]{image}
 \photoscale{0.12}
 
-\leftheader{\large\textbf{ADELINE MONZIER}\\
-\normalsize
-New York, NY\\
-(646) 422-9348\\
-  \href{mailto:adeline.harlemcinema@gmail.com}{\texttt{adeline.harlemcinema@gmail.com}}\\
+\leftheader{%
+  \centering
+  \large\textbf{ADELINE MONZIER}\\[2pt]%
+  \normalsize
+  \href{mailto:adeline.harlemcinema@gmail.com}{adeline.harlemcinema@gmail.com}%
+  \ -\ (646) 422 9348\ -\ New York, NY\\[3pt]%
+  {\subtitlefont\AdeSubtitle}\\[6pt]%
+}
 %  \href%
 %  {http://www.columbia.edu/}%
 %  {%
@@ -78,8 +81,10 @@ New York, NY\\
 \titlefont{\fontfamily{pag}\selectfont\bfseries\Huge}
 \title{}
 
-\subtitlefont{\fontfamily{pag}\selectfont\itshape\large}
-\subtitle{Film Festival Leader $|$ Youth \& Family Programming $|$ Transatlantic Cinema \& Education}
+\subtitlefont{\fontfamily{pag}\selectfont\itshape\normalsize}
+\newcommand{\AdeSubtitle}{Film Programmer $|$ Film Education \& Family Programming\\%
+  Festival Operations $|$ Community Partnerships}
+\subtitle{}
 
 \rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
 \subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large}
@@ -90,8 +95,9 @@ New York, NY\\
 %\prefix{}
 \continuedname{~~(continued)}
 
-\setlength\rubricspace{5pt}
-\setlength\rubricafterspace{-0.53cm}
+\setlength\headerspace{0pt}
+\setlength\rubricspace{2pt}
+\setlength\rubricafterspace{-0.62cm}
 \setlength\subrubricbeforespace{15pt}
 \setlength\subrubricspace{0pt}
 %\renewcommand\arraystretch{1.5}
@@ -125,7 +131,7 @@ New York, NY\\
 %\usepackage{shortcuts}
 %\usepackage{dvl}
 
-\headerscale{.65}
+\headerscale{1.0}
 
 \makeatletter
 \def\mymulticol{\@nextentry\noalign{\gdef\@nextentry{}}
@@ -135,14 +141,11 @@ New York, NY\\
 
 \begin{document}
 \makeheaders[t]
-
-\vspace{-1.2cm}
+\vspace{-0.55cm}
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
 \makerubric{ade_summary_en}
-\makerubric{ade_strengths_en}
-\makerubric{ade_youth_en}
-\makerubric{ade_festival_en}
+\makerubric{ade_festival_programming_en}
 \makerubric{ade_international_en}
 \makerubric{ade_teaching_en}
 \makerubric{ade_formation_en}
