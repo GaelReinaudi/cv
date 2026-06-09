@@ -5,12 +5,6 @@
 # Usage: ./compile_resume.sh
 
 echo "Compiling CV.tex..."
-pdflatex CV.tex && pdflatex CV.tex
+docker run --rm -v "/mnt/data/repos/gaelreinaudi/cv":/data -w "/data/Latex Sources - Quant" texlive/texlive pdflatex -interaction=nonstopmode CV.tex 2>&1 | grep -E "(error|Output|Fatal)"
 
-DATED_FILENAME="CV_Gael_Reinaudi_HedgeFund_$(date +"%Y-%m-%d").pdf"
-echo "Creating dated copy: $DATED_FILENAME"
-cp CV.pdf "$DATED_FILENAME"
-
-echo "Resume compilation complete!"
-echo "Output files:"
-ls -lh CV.pdf "$DATED_FILENAME" 
+# cp "Latex Sources - Quant/CV.pdf" "Latex Sources - Quant/Gael_Reinaudi.pdf"

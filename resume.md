@@ -6,59 +6,54 @@ Non-Profit Leadership | Film Education & Programming | Festival Operations | Com
 **SUMMARY**  
 ---
 
-* Film executive and programmer with 20+ years of experience building film education, and family programming across NYC cinemas, festivals, schools, and cultural institutions.  
-* Lead student screenings and teacher professional development at Film at Lincoln Center, curate family-friendly series including Metrograph’s Screen Time;  co-founded Uptown Film Center, a nonprofit cinema arts and education center; and directed the festival Rendez-Vous with French Cinema for Unifrance at Film at Lincoln Center.  
-* Bring institutional leadership, festival operations, community partnerships, and deep transatlantic cinema expertise to programming and events production that connect young audiences, educators, and families with international film.
+* Film executive and programmer with 20+ years of experience building film education programs, producing events, and cultivating talent relationships \- across NYC cinemas, festivals and schools.  
+* Launched the student screenings and teacher professional development program at Film at Lincoln Center; curate and oversee film series including Metrograph's family-friendly Screen Time; co-founded Uptown Film Center, a nonprofit cinema arts and education center; and for Unifrance, directed the Rendez-Vous with French Cinema festival at Film at Lincoln Center and launched the Young French Cinema Tour.  
+* Bring organizational leadership, festival operations, community partnerships, and deep transatlantic cinema expertise to programming and events production that connect young audiences, educators, and families with independent film.
 
 **FESTIVAL, FILM EDUCATION, PROGRAMMING & EVENT PRODUCTION**  
 ---
 
-**Uptown Film Center 2024–present**  
-*Vice-President & Co-Founder*
+**Uptown Film Center 2024–present** *Vice-President & Co-Founder*
 
 * Co-founded a 501(c)(3) nonprofit dedicated to transforming the historic Metro Theater in the UWS into a five-screen cinema arts and education center with a community café  
 * Co-lead strategic planning, institutional decision-making, programming, film education and community partnership development
 
-  **Metrograph 2022-present**   
-   *Guest Programmer (Part-Time)*
+  **Metrograph 2022-present** *Guest Programmer (Part-Time)*
 
 * Program Screen Time, a family-friendly series  
-* Curate first-runs and repertory series featuring filmmakers and talent including Juliette Binoche, Kleber Mendonça Filho, Ugo Bienvenu, Oliver Laxe, Alice Diop, Vicky Krieps, Alain Gomis…  
+* Curate first-runs and repertory series featuring filmmakers and talent including Kleber Mendonça Filho, Ugo Bienvenu, Alice Diop, Juliette Binoche, Vicky Krieps, Alain Gomis…  
 * Oversee licensing and operational delivery for the programs   
 * Identify and cultivate partners and community organizations for each series  
 * Act as filmmaker liaison, managing hospitality, Q\&As, and special events for each series  
 * Secure grants for series and international filmmakers’ travels  
     
-  **Film at Lincoln Center 2023-present**  
-  *Education Consultant, Student Screenings*  
-* Curate and organize free student screenings for middle schools, high schools, and colleges in coordination with FLC programming (in 2025/2026 : 16 screenings, 35 schools, 3500 students)  
-* Create film guides for students and teachers for each screening  
-* Source and invite a guest for each screening \- filmmaker, scholar, critic, or subject expert \- and lead the post-screening discussion  
+  **Film at Lincoln Center 2023-present** *Education Consultant, Student Screenings*  
+* Started FLC’s film education program   
+* Organize free student screenings for middle and high schools  in coordination with FLC programming (in 2025/2026 : 16 screenings, 35 schools, 3500 students)  
+* For each screening :   
+  * Create film guides for students and teachers   
+    * Source and invite a guest \- filmmaker, scholar, critic \- and lead Q\&A  
 * Design and lead professional development days for NYC middle and high school teachers  
     
-  **Ciné-Tamaris \- *The Gleaners and I* Education Platform 2024-present**   
-  *US Educational Partnerships Coordinator*  
-* Lead university outreach and project coordination for Agnès Varda's educational platform 
+  **Ciné-Tamaris \- *The Gleaners and I : Revisiting Agnès Varda’s Edit* Education Platform 2024-present**  *US Educational Partnerships Coordinator*  
+* Lead US university outreach and project coordination 
 
-**Unifrance 2013–2024**  
-*US Representative*
+**Unifrance 2013–2024** *US Representative*
 
 * Co-directed the annual Rendez-Vous with French Cinema festival at Film at Lincoln Center, overseeing all operational logistics, filmmaker hospitality, partnerships and communication  
-* Founded and coordinated the Young French Cinema Program, growing a national network of US cinemas, festivals and universities for French films without US distribution.  
+* Acted as filmmaker liaison for French talents in NYC  
+* Founded and coordinated the Young French Cinema Tour, growing a national network of US cinemas, festivals and universities for French films without US distribution.  
 * Supported awards-season and Oscar campaign for the French Entry and co-productions  
 * Conducted ongoing market analysis of the US film landscape for French cinema
 
-**Kourtrajmé & Manhattan Neighborhood Network 2023-2024**  
-*Film Education and Programming Consultant*
+**Kourtrajmé & Manhattan Neighborhood Network 2023-2024** *Film Education and Programming Consultant*
 
 * Advised on the launch of the NYC chapter of the French film school Kourtrajmé  
 * Curated programming and coordinated talent at MNN's NYC Center for Media Education 
 
-**Uptown Flicks 2016–present**  
-*Founder & Programmer*
+**Uptown Flicks 2016–present** *Founder & Programmer*
 
-* Founded and run a Harlem-based community film series presenting international and US features at the Maysles Documentary Center   
-* Organize monthly screenings with active outreach to local organizations and communities
+* Founded and run a Harlem-based community film series presenting independent films at the Maysles Cinema with active outreach to local organizations and communities
 
 INTERNATIONAL FILM INDUSTRY AND DISTRIBUTION
 
@@ -92,28 +87,26 @@ INTERNATIONAL FILM INDUSTRY AND DISTRIBUTION
 **TEACHING, WRITING & JURY**   
 ---
 
-**Unifrance 2020**  
-*Co-Author – 25 ans de cinéma français à l'étranger*
+**Académie des Césars** *Voting Member* 2022-present
 
-* Co-authored a publication on 25 years of French cinema internationally, published by Unifrance and Hémisphères éditions
+**Writing & Research** 2019-2020
 
-**Afterschool Film Club for Tweens & Teens 2019–2023**  
-*Organizer & Animator*
+* Co-authored *25 ans de cinéma français à l'étranger* (Unifrance / Hémisphères éditions, 2020), a publication on 25 years of French cinema internationally  
+* Conducted archival research for Serge Toubiana's *L'Amie Américaine* (2019), a biography of Francophile film advocate Helen Scott
+
+**Afterschool Film Club for Tweens & Teens 2019–2023** 
 
 * Organized and led an afterschool film club program for tweens and teens 
 
 **Guest Speaker 2011–present**
 
-* Regular University speaker at SVA, Columbia University, La Fémis, Université Paul Valéry  
+* Regular University speaker at SVA, Columbia University, La Fémis  
 * Panelist at Arthouse Convergence, COLCOA, PGA East, Berlinale Talent Campus, Venice IFF, and Euromed Workshop
 
-**Jury Member 2016–2022**  
-*Sonoma IFF & IFP Week / French in Motion Jury*
+**Jury Member 2016–2022**
 
-* Jury member at Sonoma IFF and pre-selector of 10 scripts per year for the French in Motion co-production market at Gotham's IFP Week
-
-**Académie des Césars**   
-*Voting Member since 2022*
+* Jury member at Sonoma IFF  
+* Scripts Pre-selector for the French in Motion co-production market at Gotham's IFP Week
 
 **EDUCATION**  
 ---
@@ -122,7 +115,7 @@ INTERNATIONAL FILM INDUSTRY AND DISTRIBUTION
 Certificate in Producing
 
 **École Normale Supérieure d'Ulm/Sorbonne Nouvelle, Paris 2001–2005**  
-Master of Research – Contemporary German Studies (Paris & Berlin) 
+Master of Research – Contemporary German Studies & Film Studies (Paris & Berlin) 
 
 **Sciences Po Paris 2001–2005**  
 Master in Culture and Media Management (Paris & London) 
