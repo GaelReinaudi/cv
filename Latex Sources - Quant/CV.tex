@@ -26,7 +26,7 @@ skipsamekey]{curve}
 
 
 \NeedsTeXFormat{LaTeX2e}
-\usepackage[nohead,nofoot,hmargin=1.0cm,vmargin=0.6cm]{geometry}
+\usepackage[nohead,nofoot,hmargin=1.2cm,vmargin=1.0cm]{geometry}
 \usepackage{floatflt}
 \usepackage{babel}
 \usepackage[latin1]{inputenc}
@@ -83,9 +83,9 @@ New York
 %\prefix{}
 \continuedname{~~(continued)}
 
-\setlength\rubricspace{5pt}
-\setlength\rubricafterspace{-0.53cm}
-\setlength\subrubricbeforespace{15pt}
+\setlength\rubricspace{2pt}
+\setlength\rubricafterspace{-0.58cm}
+\setlength\subrubricbeforespace{4pt}
 \setlength\subrubricspace{0pt}
 %\renewcommand\arraystretch{1.5}
 %\setlength\rubricafterspace{-20pt}
@@ -132,11 +132,12 @@ New York
 \vspace{-1.2cm}
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
+% \vspace{-0.2cm}
 \makerubric{quant_summary_en}
 \makerubric{quant_skills_en}
+\makerubric{quant_experience_en}
 \makerubric{quant_independent_research_en}
 \makerubric{quant_formation_en}
-\makerubric{quant_experience_en}
 \makerubric{quant_divers_en}
 }{}
 
