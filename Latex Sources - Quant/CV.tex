@@ -36,12 +36,15 @@ skipsamekey]{curve}
 \usepackage{graphicx}
 
 \usepackage[colorlinks, urlcolor=blue]{hyperref}
-\usepackage{enumitem}
 \newenvironment{cvitems}{%
-  \begin{itemize}[noitemsep, topsep=2pt, partopsep=0pt, parsep=0pt,
-    leftmargin=1.4em, label={$\diamond$}]%
+  \begin{list}{$\diamond$}{%
+    \setlength{\leftmargin}{1.4em}%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\topsep}{2pt}%
+    \setlength{\partopsep}{0pt}%
+    \setlength{\parsep}{0pt}}%
 }{%
-  \end{itemize}%
+  \end{list}%
 }
 
 %\photo[r]{image}
@@ -66,13 +69,13 @@ New York
 %  \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{years old}{}
 %  \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{ans}{}
 %  }
-\rightheader{~}
+\rightheader{\href{https://www.linkedin.com/in/gaelreinaudi}{\texttt{linkedin.com/in/gaelreinaudi}}}
 
-\titlefont{\fontfamily{pag}\selectfont\bfseries\Huge}
-\title{}
+\titlefont{\fontfamily{pag}\selectfont\bfseries\Large}
+\title{AI \& ENGINEERING EXECUTIVE}
 
-\subtitlefont{\fontfamily{pag}\selectfont\itshape\large}
-\subtitle{Director of Engineering $|$ Agentic AI Architect $|$ Financial Systems}
+\subtitlefont{\fontfamily{pag}\selectfont\itshape\normalsize}
+\subtitle{Agentic Systems $|$ AI-Native Organizations $|$ Financial \& Mission-Critical Systems}
 
 \rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
 \subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large}
@@ -128,8 +131,9 @@ New York
 
 \begin{document}
 \makeheaders[t]
+\maketitle
 
-\vspace{-1.2cm}
+\vspace{-0.5cm}
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
 % \vspace{-0.2cm}
@@ -146,7 +150,8 @@ New York
 \makerubric{experience_fr}
 \makerubric{divers_fr}}
 {}
-\makerubric{quant_publications_en}
+% Publications omitted from the Veritas-specific executive resume.
+% \makerubric{quant_publications_en}
 
 %\nocite{*}
 %\bibliographystyle{plain}
