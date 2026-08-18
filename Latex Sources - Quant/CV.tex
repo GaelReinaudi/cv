@@ -35,11 +35,15 @@ skipsamekey]{curve}
 
 \usepackage{graphicx}
 
-\usepackage[colorlinks, urlcolor=blue]{hyperref}
+\usepackage{xcolor}
+\definecolor{executivenavy}{RGB}{31, 58, 82}
+\definecolor{rulegray}{RGB}{150, 157, 163}
+\usepackage[colorlinks, urlcolor=executivenavy]{hyperref}
+\linespread{1.04}
 \newenvironment{cvitems}{%
   \begin{list}{$\diamond$}{%
     \setlength{\leftmargin}{1.4em}%
-    \setlength{\itemsep}{0pt}%
+    \setlength{\itemsep}{1pt}%
     \setlength{\topsep}{2pt}%
     \setlength{\partopsep}{0pt}%
     \setlength{\parsep}{0pt}}%
@@ -54,9 +58,8 @@ skipsamekey]{curve}
 \normalsize
 %Permanent resident\\
 % 352 West 117th street \#2F New York, NY 10026, USA\\
-New York
- (646) 422 9346\\
-  \href{mailto:gael.reinaudi@gmail.com}{\texttt{gael.reinaudi@gmail.com}}\\
+New York, NY \enspace\textcolor{rulegray}{$|$}\enspace (646) 422-9346\\
+  \href{mailto:gael.reinaudi@gmail.com}{gael.reinaudi@gmail.com}\\
 %  \href%
 %  {http://www.columbia.edu/}%
 %  {%
@@ -69,16 +72,16 @@ New York
 %  \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{years old}{}
 %  \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{ans}{}
 %  }
-\rightheader{\href{https://www.linkedin.com/in/gaelreinaudi}{\texttt{linkedin.com/in/gaelreinaudi}}}
+\rightheader{\href{https://www.linkedin.com/in/gaelreinaudi}{linkedin.com/in/gaelreinaudi}}
 
-\titlefont{\fontfamily{pag}\selectfont\bfseries\Large}
+\titlefont{\fontfamily{pag}\selectfont\bfseries\Large\color{executivenavy}}
 \title{AI \& ENGINEERING EXECUTIVE}
 
 \subtitlefont{\fontfamily{pag}\selectfont\itshape\normalsize}
 \subtitle{Agentic Systems $|$ AI-Native Organizations $|$ Financial \& Mission-Critical Systems}
 
-\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
-\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large}
+\rubricfont{\fontfamily{pag}\selectfont\bfseries\large\color{executivenavy}}
+\subrubricfont{\fontfamily{pag}\selectfont\bfseries\normalsize\color{executivenavy}}
 \keyfont{\fontfamily{pag}\selectfont\bfseries}
 
 \usepackage{pifont}
@@ -87,33 +90,20 @@ New York
 \continuedname{~~(continued)}
 
 \setlength\rubricspace{2pt}
-\setlength\rubricafterspace{-0.58cm}
-\setlength\subrubricbeforespace{4pt}
-\setlength\subrubricspace{0pt}
+\setlength\rubricafterspace{-0.40cm}
+\setlength\subrubricbeforespace{6pt}
+\setlength\subrubricspace{1pt}
 %\renewcommand\arraystretch{1.5}
 %\setlength\rubricafterspace{-20pt}
 
-\usepackage{color}
 \makeatletter
-% Cross the rubric titles:
 \def\@@rubrichead#1{%
   \@rubricfont%
-  \makebox[0pt][l]{\colorbox[gray]{0.7}{\makebox[\linewidth-4\fboxsep]{}}}%
-  \makebox[\linewidth-2\fboxsep][c]{#1}}
-% or underline them:
-\iffalse
-\def\@@rubrichead#1{%
-  \@rubricfont%
-  \makebox[0pt][l]{\rule[-2mm]{\linewidth}{1mm}}%
-  \makebox[\linewidth-2\fboxsep][c]{#1}}
-\fi
+  \makebox[0pt][l]{\raisebox{-4pt}[0pt][0pt]{\color{rulegray}\rule{\linewidth}{0.55pt}}}%
+  \makebox[\linewidth][l]{#1}}
 \def\@@subrubric#1{%
   \rule{0bp}{\@beforespace}
-  {\@subrubricfont%
-    \makebox[1ex][l]{\colorbox[gray]{0.7}{%
-    %\textcolor[gray]{0.7}{M}
-    \phantom M%
-    }}#1}%
+  {\@subrubricfont #1}%
   \@subrubricmark{#1}}
 \makeatother
 
@@ -122,6 +112,8 @@ New York
 %\usepackage{dvl}
 
 \headerscale{.65}
+\setlength\headerspace{2pt}
+\setlength\titlespace{3pt}
 
 \makeatletter
 \def\mymulticol{\@nextentry\noalign{\gdef\@nextentry{}}
@@ -131,9 +123,10 @@ New York
 
 \begin{document}
 \makeheaders[t]
+\vspace{-0.4cm}
 \maketitle
 
-\vspace{-0.5cm}
+\vspace{-0.25cm}
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
 % \vspace{-0.2cm}
