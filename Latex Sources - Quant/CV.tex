@@ -26,7 +26,8 @@ skipsamekey]{curve}
 
 
 \NeedsTeXFormat{LaTeX2e}
-\usepackage[nohead,nofoot,hmargin=1.2cm,vmargin=0.85cm]{geometry}
+% CurVe does not set margins; the class manual (sec. 4.1) says use geometry.
+\usepackage[nohead,nofoot,hmargin=1.15cm,vmargin=0.95cm]{geometry}
 \usepackage{floatflt}
 \usepackage{babel}
 \usepackage[latin1]{inputenc}
@@ -40,15 +41,18 @@ skipsamekey]{curve}
 \definecolor{executivenavy}{RGB}{31, 58, 82}
 \definecolor{rulegray}{RGB}{150, 157, 163}
 \usepackage[colorlinks, urlcolor=executivenavy]{hyperref}
-\linespread{1.00}
+% Class default is 10pt; 8pt keeps the date column readable without
+% forcing extra wraps that blow the page count.
 \setlength{\tabcolsep}{5pt}
 \emergencystretch=1.5em
 \hyphenpenalty=6000
 \exhyphenpenalty=6000
+% Diamond lists sit inside CurVe entries. Keep the marker; use ordinary list
+% glue instead of crushing itemsep/topsep to 1pt.
 \newenvironment{cvitems}{%
   \begin{list}{$\diamond$}{%
     \setlength{\leftmargin}{1.35em}%
-    \setlength{\itemsep}{1pt}%
+    \setlength{\itemsep}{2pt}%
     \setlength{\topsep}{1pt}%
     \setlength{\partopsep}{0pt}%
     \setlength{\parsep}{0pt}}%
@@ -73,7 +77,7 @@ New York, NY
 \rightheader{\mbox{}}
 
 \titlefont{\fontfamily{pag}\selectfont\bfseries\Large\color{executivenavy}}
-\title{AI PLATFORM ARCHITECT \& ENGINEERING LEADER}
+\title{AI PLATFORM ARCHITECT \& HANDS-ON ENGINEERING LEADER}
 
 \subtitlefont{\fontfamily{pag}\selectfont\itshape\normalsize}
 \subtitle{Production Agentic Systems $|$ Shared AI Infrastructure $|$ Financial \& Regulated Systems}
@@ -88,12 +92,13 @@ New York, NY
 %\prefix{}
 \continuedname{~~(continued)}
 
-\setlength\rubricspace{2pt}
-\setlength\rubricafterspace{3pt}
-\setlength\subrubricbeforespace{5pt}
-\setlength\subrubricspace{1pt}
-%\renewcommand\arraystretch{1.5}
-%\setlength\rubricafterspace{-20pt}
+% CurVe class defaults (curve.cls / FAQ Q2): rubricspace=10pt,
+% subrubricbeforespace=20pt, subrubricspace=5pt, headerspace=10pt,
+% titlespace=0pt, tabcolsep=10pt. Inter-row leading is \arraystretch.
+\setlength\rubricspace{6pt}
+\setlength\rubricafterspace{5pt}
+\setlength\subrubricbeforespace{10pt}
+\setlength\subrubricspace{4pt}
 
 \makeatletter
 \def\@@rubrichead#1{%
@@ -111,16 +116,14 @@ New York, NY
 %\usepackage{dvl}
 
 \headerscale{1}
-\setlength\headerspace{6pt}
-\setlength\titlespace{4pt}
+\setlength\headerspace{8pt}
+\setlength\titlespace{6pt}
 
 \makeatletter
 \def\@@maketitle{%
   \noindent{\@titlefont\@title}%
   \ifx\@subtitle\@undefined\else\\{\@subtitlefont\@subtitle}\fi
   \par\vspace\titlespace}
-\def\mymulticol{\@nextentry\noalign{\gdef\@nextentry{}}
-  \multicolumn}
 \makeatother
 \pagestyle{empty}
 

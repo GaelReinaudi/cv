@@ -2,7 +2,7 @@
 
 New York, NY | (646) 422-9346 | [gael.reinaudi@gmail.com](mailto:gael.reinaudi@gmail.com) | linkedin.com/in/gaelreinaudi
 
-## AI PLATFORM ARCHITECT & ENGINEERING LEADER
+## AI PLATFORM ARCHITECT & HANDS-ON ENGINEERING LEADER
 
 **Production Agentic Systems | Shared AI Infrastructure | Financial & Regulated Systems**
 
@@ -34,7 +34,7 @@ New York, NY | (646) 422-9346 | [gael.reinaudi@gmail.com](mailto:gael.reinaudi@g
 
 * Built repository and cross-repository intelligence that models codebase purpose, architecture, patterns, ownership, and engineering intent, giving AI systems the institutional context needed to reason against how an organization actually builds software rather than generic rules.
 
-* Led teams of **10–20 engineers**, then drove the transition toward smaller, high-skill teams augmented by AI agents, shared tooling, and reusable engineering infrastructure; selected and configured the toolchain, codified reusable development patterns and engineering standards, and **taught engineers how to work effectively with the new model**.
+* Led teams of **10–20 engineers**, then drove the transition toward smaller teams augmented by AI agents, shared tooling, and reusable engineering infrastructure; selected and configured the toolchain, codified reusable development patterns and engineering standards, and **taught engineers how to work effectively with the new model**.
 
 * Designing and building an **AI-driven supervisory layer for an industrial vision system deployed at the edge** that detects when changes in the physical environment degrade the inspection pipeline, reasons across imagery and system state to diagnose the change, retunes or reconfigures the deployed system, and validates restored performance before accepting the new configuration.
 
@@ -62,16 +62,20 @@ New York, NY | (646) 422-9346 | [gael.reinaudi@gmail.com](mailto:gael.reinaudi@g
 
 ## FINANCIAL & PRODUCTION SYSTEMS
 
-**LATOUR TRADING / TOWER RESEARCH | Quantitative Developer | 2024–2025**
+### LATOUR TRADING / TOWER RESEARCH | Quantitative Developer | 2024–2025
+
 Extended and maintained performance-sensitive C++ research infrastructure used daily by quantitative researchers in Tower Research's Latour Trading group.
 
-**JPMORGAN | Data Scientist Manager, Vice President | 2018–2021**
+### JPMORGAN | Data Scientist Manager, Vice President | 2018–2021
+
 Built a production AI/ML framework continuously integrating heterogeneous live data into model-training, prediction, and evaluation workflows; developed deep-learning systems for continuous training and evaluation in a large regulated financial institution.
 
-**RONIN CAPITAL | Lead Data Scientist / Lead Strategy Developer | 2015–2018**
+### RONIN CAPITAL | Lead Data Scientist / Lead Strategy Developer | 2015–2018
+
 Sole engineer and quantitative researcher paired directly with the portfolio manager in a two-person team. Owned systematic equity and ETF strategies from research and model evaluation through live execution; built an order-management system and multiple machine-learning-driven trading strategies.
 
-**GLOBAL TRADING SYSTEMS | Lead Trading Model Developer | 2013–2015**
+### GLOBAL TRADING SYSTEMS | Lead Trading Model Developer | 2013–2015
+
 Built trading logic, backtesting, analysis, and automated production deployment for systematic fixed-income strategies; optimized performance-critical C++ systems using metaprogramming, branch-prediction awareness, and cache optimization.
 
 ---
@@ -85,13 +89,14 @@ Built trading logic, backtesting, analysis, and automated production deployment 
 ## EDUCATION & RESEARCH
 
 **Ph.D., Experimental Quantum Physics | École Normale Supérieure, Paris | 2008**
-Laboratoire Kastler-Brossel, Atom Optics Group led by Nobel Laureate Claude Cohen-Tannoudji.
+Laboratoire Kastler-Brossel, Atom Optics Group led by Claude Cohen-Tannoudji.
 
 **École Normale Supérieure, Paris | 2001**
 Admitted through the French national competitive examination.
 
 **Columbia University | Postdoctoral Researcher & Associate Research Scientist, Atomic Physics | 2008–2013**
-Built from scratch a complete experimental quantum-physics apparatus and its control software, including electronics, instrumentation, data acquisition, and automated optimization of the live physical system.
+
+Built from scratch a complete experimental quantum-physics apparatus and its control software, including electronics, instrumentation, data acquisition, **feedback**, and automated optimization of the live physical system.
 
 Designed **LabExe**, a plugin-based experimental-control platform separating reusable acquisition, visualization, analysis, feedback, optimization, and control infrastructure from experiment- and hardware-specific behavior. Cameras, sensors, instruments, fitting routines, and experiment-specific logic could be added independently through plugins without rewriting the core system.
 
