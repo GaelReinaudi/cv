@@ -1,72 +1,74 @@
 \begin{rubric}{Professional Experience}
-  \subrubric{AI Systems \& Platform Architecture}
 
   \entry*[2025--Present]%
   \textbf{Tactical Edge AI (New York):} Director of Engineering
   \par
   \begin{cvitems}
-    \item Lead engineering and AI/agentic architecture across the firm's products and teams, including
-    technical direction, stack decisions, shared infrastructure, AWS architecture, tooling, and standards.
-    \item Architected and own the shared Python agent harness used across 5+ products: strongly typed
-    outputs, automatic introspection, unified interfaces, tool orchestration, multimodal inputs, evaluation,
-    observability, cost reporting, and drift tracking.
-    \item Designed the platform boundary so substantially different products reuse the same agent
-    infrastructure without pulling domain-specific logic into the common layer.
-    \item Built evaluation and observability into the platform from the outset: automated output assessment,
-    cost measurement, output-drift analysis, structured experimentation, and production failure analysis.
-    \item Built \href{https://connectory.ai}{Connectory.ai} from the ground up, a repository-aware AI
+    \item Architected and own the \textbf{shared Python agent platform used across 5+ products}, including strongly
+    typed interfaces and outputs, automatic introspection, tool orchestration, multimodal inputs, evaluation,
+    observability, cost reporting, and drift tracking, together with the supporting AWS architecture and
+    infrastructure.
+    \item Designed the platform boundary so substantially different products can reuse common infrastructure
+    without pulling domain-specific logic into the shared layer; recurring product needs become reusable
+    primitives rather than duplicated implementations.
+    \item Built evaluation and observability into the platform from the outset, including automated output
+    assessment, cost measurement, output-drift analysis, structured experimentation, and investigation of
+    production failure modes.
+    \item Built \textbf{\href{https://connectory.ai}{Connectory.ai}} from the ground up, a repository-aware AI
     engineering governance and intelligence platform that has analyzed thousands of pull requests across
     dozens of repositories, identifying architecture drift, duplicated patterns, repository-specific
     violations, and brittle AI-generated code.
     \item Built repository and cross-repository intelligence that models codebase purpose, architecture,
-    patterns, ownership, and engineering intent, so AI systems reason against actual repository goals
-    rather than generic rules.
-    \item Led 10--20 engineers, then drove the transition toward smaller, high-skill teams amplified
-    by AI agents, shared tooling, and reusable engineering infrastructure.
-    \item Selected and configured the toolchain, codified reusable development patterns, and established
-    engineering practices that increased the leverage of individual engineers.
-    \item Designing an AI-driven supervisory layer for an industrial vision system at the edge that detects
-    when the physical environment degrades inspection, diagnoses the change from imagery and system state,
-    retunes the deployed pipeline, and evaluates the new configuration before accepting it.
-  \end{cvitems}
-
-  \entry*[2025]%
-  \textbf{PointOne (New York):} AI Engineering Consultant
-  \par
-  \begin{cvitems}
-    \item Embedded with the engineering team to establish practical AI engineering, testing, and evaluation
-    practices; built a self-introspecting testing and evaluation platform for complex domain-specific data
-    pipelines.
-  \end{cvitems}
-
-  \entry*[2021--2024]%
-  \textbf{\href{https://sinecure.ai}{Sinecure.AI} (New York):} Co-Founder, Architect \& CTO
-  \par
-  \begin{cvitems}
-    \item Co-founded Sinecure.AI and owned technology strategy, software architecture, cloud
-    infrastructure, engineering execution, and technical team development from inception.
-    \item Established the complete technical foundation from a blank repository: backend architecture,
-    strongly typed Python services, repository structure, deployment model, data pipelines, CI/CD, and
-    production GCP infrastructure.
+    patterns, ownership, and engineering intent, giving AI systems the institutional context needed to
+    reason against how an organization actually builds software rather than generic rules.
+    \item Led teams of \textbf{10--20 engineers}, then drove the transition toward smaller, high-skill teams
+    augmented by AI agents, shared tooling, and reusable engineering infrastructure; selected and configured
+    the toolchain, codified reusable development patterns and engineering standards, and \textbf{taught engineers
+    how to work effectively with the new model}.
+    \item Designing and building an \textbf{AI-driven supervisory layer for an industrial vision system deployed at
+    the edge} that detects when changes in the physical environment degrade the inspection pipeline, reasons
+    across imagery and system state to diagnose the change, retunes or reconfigures the deployed system, and
+    validates restored performance before accepting the new configuration.
+    \item Built a \textbf{voice-driven AI system for military airbase operations} combining operational state,
+    structured event capture, procedural and regulatory retrieval, and decision support. Built simulation
+    and historical-event replay on the \textbf{same application logic as the operational system}, including
+    reconstruction of a real aircraft-accident sequence, so operators can experience what the system would
+    surface, learn its behavior and limitations, and build justified trust before relying on it in
+    consequential operations.
   \end{cvitems}
 
   \entry*[2021--2024]%
   \textbf{\href{https://sinecure.ai}{Sinecure.AI} (New York):} Co-Founder, Architect \& CTO
   \par
   \begin{cvitems}
-    \item Architected a plugin-based AI and knowledge platform that crawled, stored, connected, and
-    synthesized heterogeneous data sources into a reusable, strongly typed knowledge environment.
-    \item Designed domain-specific research systems around the underlying data, workflows, and business constraints,
-    combining multi-step reasoning, retrieval, structured extraction, and orchestration across heterogeneous
-    tools and sources.
+    \item Co-founded Sinecure.AI and owned technology strategy, software architecture, cloud infrastructure,
+    engineering execution, and technical team development from inception.
+    \item Established the company's complete technical foundation from a \textbf{blank repository}, including backend
+    architecture, strongly typed Python services, repository structure, deployment model, data pipelines,
+    CI/CD, and production GCP infrastructure.
+  \end{cvitems}
+
+  \entry*[2021--2024]%
+  \textbf{\href{https://sinecure.ai}{Sinecure.AI} (New York):} Co-Founder, Architect \& CTO
+  \par
+  \begin{cvitems}
+    \item Architected a \textbf{plugin-based candidate intelligence platform} that separated reusable sourcing,
+    crawling, retrieval, structured extraction, knowledge representation, and research infrastructure from
+    the highly specific logic required by different industries, job families, and candidate searches.
+    \item Used that architecture to generalize candidate discovery and research across substantially
+    different verticals without flattening them into a generic recruiting workflow: the shared platform
+    handled common machinery while plugins preserved domain-specific data sources, constraints, workflows,
+    and judgment.
+    \item Built multi-step AI and research workflows combining retrieval, structured extraction,
+    heterogeneous data sources, external tools, and domain-specific reasoning.
     \item Built and operated the production platform using Python, Pydantic, Django, Hasura / GraphQL,
     GCP, Kubernetes, and Cloud Run.
-    \item Recruited and led a 5-person engineering team while remaining hands-on across architecture,
-    implementation, deployment, and infrastructure; led technical discussions with customers, investors,
-    and the board.
+    \item Recruited and led a \textbf{5-person engineering team} while remaining hands-on across software
+    architecture, implementation, deployment, and infrastructure; led technical discussions directly with
+    customers, investors, and board members.
   \end{cvitems}
 
-  \subrubric{Quantitative Finance \& Production Systems}
+  \subrubric{Financial \& Production Systems}
 
   \entry*[2024--2025]%
   \textbf{Latour Trading LLC / Tower Research (New York):} Quantitative Developer

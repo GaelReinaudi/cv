@@ -24,9 +24,7 @@ New York, NY | (646) 422-9346 | [gael.reinaudi@gmail.com](mailto:gael.reinaudi@g
 
 **Director of Engineering | 2025–Present**
 
-* Lead engineering and AI/agentic architecture across the firm's products and teams, with responsibility for technical direction, technology-stack decisions, shared infrastructure, AWS architecture, engineering tooling, and engineering standards.
-
-* Architected and own the **shared Python agent platform used across 5+ products**, including strongly typed interfaces and outputs, automatic introspection, tool orchestration, multimodal inputs, evaluation, observability, cost reporting, and drift tracking.
+* Architected and own the **shared Python agent platform used across 5+ products**, including strongly typed interfaces and outputs, automatic introspection, tool orchestration, multimodal inputs, evaluation, observability, cost reporting, and drift tracking, together with the supporting AWS architecture and infrastructure.
 
 * Designed the platform boundary so substantially different products can reuse common infrastructure without pulling domain-specific logic into the shared layer; recurring product needs become reusable primitives rather than duplicated implementations.
 
@@ -36,7 +34,7 @@ New York, NY | (646) 422-9346 | [gael.reinaudi@gmail.com](mailto:gael.reinaudi@g
 
 * Built repository and cross-repository intelligence that models codebase purpose, architecture, patterns, ownership, and engineering intent, giving AI systems the institutional context needed to reason against how an organization actually builds software rather than generic rules.
 
-* Led teams of **10–20 engineers**, then drove the transition toward smaller, high-skill teams augmented by AI agents, shared tooling, and reusable engineering infrastructure. Selected and configured the toolchain, codified reusable development patterns and engineering standards, and **taught engineers how to work effectively with the new model**.
+* Led teams of **10–20 engineers**, then drove the transition toward smaller, high-skill teams augmented by AI agents, shared tooling, and reusable engineering infrastructure; selected and configured the toolchain, codified reusable development patterns and engineering standards, and **taught engineers how to work effectively with the new model**.
 
 * Designing and building an **AI-driven supervisory layer for an industrial vision system deployed at the edge** that detects when changes in the physical environment degrade the inspection pipeline, reasons across imagery and system state to diagnose the change, retunes or reconfigures the deployed system, and validates restored performance before accepting the new configuration.
 
@@ -59,12 +57,6 @@ New York, NY | (646) 422-9346 | [gael.reinaudi@gmail.com](mailto:gael.reinaudi@g
 * Built and operated the production platform using Python, Pydantic, Django, Hasura / GraphQL, GCP, Kubernetes, and Cloud Run.
 
 * Recruited and led a **5-person engineering team** while remaining hands-on across software architecture, implementation, deployment, and infrastructure; led technical discussions directly with customers, investors, and board members.
-
-### POINTONE | New York, NY
-
-**AI Engineering Consultant | 2025**
-
-* Embedded with the engineering team to establish practical AI engineering, testing, and evaluation practices; built a self-introspecting testing and evaluation platform for complex domain-specific data pipelines.
 
 ---
 
@@ -93,7 +85,7 @@ Built trading logic, backtesting, analysis, and automated production deployment 
 ## EDUCATION & RESEARCH
 
 **Ph.D., Experimental Quantum Physics | École Normale Supérieure, Paris | 2008**
-Laboratoire Kastler-Brossel, Atom Optics Group led by Claude Cohen-Tannoudji.
+Laboratoire Kastler-Brossel, Atom Optics Group led by Nobel Laureate Claude Cohen-Tannoudji.
 
 **École Normale Supérieure, Paris | 2001**
 Admitted through the French national competitive examination.
@@ -101,7 +93,7 @@ Admitted through the French national competitive examination.
 **Columbia University | Postdoctoral Researcher & Associate Research Scientist, Atomic Physics | 2008–2013**
 Built from scratch a complete experimental quantum-physics apparatus and its control software, including electronics, instrumentation, data acquisition, and automated optimization of the live physical system.
 
-Designed **LabExe**, a plugin-based experimental-control platform that separated reusable acquisition, visualization, analysis, feedback, optimization, and control infrastructure from experiment- and hardware-specific behavior. Cameras, sensors, instruments, fitting routines, and experiment-specific logic could be added independently through plugins rather than requiring the core system to be rewritten.
+Designed **LabExe**, a plugin-based experimental-control platform separating reusable acquisition, visualization, analysis, feedback, optimization, and control infrastructure from experiment- and hardware-specific behavior. Cameras, sensors, instruments, fitting routines, and experiment-specific logic could be added independently through plugins without rewriting the core system.
 
 ---
 
