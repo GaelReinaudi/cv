@@ -26,12 +26,13 @@ skipsamekey]{curve}
 
 
 \NeedsTeXFormat{LaTeX2e}
-\usepackage[nohead,nofoot,hmargin=1.2cm,vmargin=1.0cm]{geometry}
+\usepackage[nohead,nofoot,hmargin=1.2cm,vmargin=0.9cm]{geometry}
 \usepackage{floatflt}
 \usepackage{babel}
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{palatino}
+\usepackage{microtype}
 
 \usepackage{graphicx}
 
@@ -39,14 +40,19 @@ skipsamekey]{curve}
 \definecolor{executivenavy}{RGB}{31, 58, 82}
 \definecolor{rulegray}{RGB}{150, 157, 163}
 \usepackage[colorlinks, urlcolor=executivenavy]{hyperref}
-\linespread{1.04}
+\linespread{1.02}
+\setlength{\tabcolsep}{5pt}
+\emergencystretch=1.5em
+\hyphenpenalty=6000
+\exhyphenpenalty=6000
 \newenvironment{cvitems}{%
   \begin{list}{$\diamond$}{%
-    \setlength{\leftmargin}{1.4em}%
+    \setlength{\leftmargin}{1.35em}%
     \setlength{\itemsep}{1pt}%
-    \setlength{\topsep}{2pt}%
+    \setlength{\topsep}{1pt}%
     \setlength{\partopsep}{0pt}%
     \setlength{\parsep}{0pt}}%
+  \raggedright
 }{%
   \end{list}%
 }
@@ -54,35 +60,28 @@ skipsamekey]{curve}
 %\photo[r]{image}
 \photoscale{0.12}
 
-\leftheader{\large\textbf{GAEL REINAUDI}\\
+\leftheader{%
+{\large\textbf{GAEL REINAUDI}}\\[3pt]
 \normalsize
-%Permanent resident\\
-% 352 West 117th street \#2F New York, NY 10026, USA\\
-New York, NY \enspace\textcolor{rulegray}{$|$}\enspace (646) 422-9346\\
-  \href{mailto:gael.reinaudi@gmail.com}{gael.reinaudi@gmail.com}\\
-%  \href%
-%  {http://www.columbia.edu/}%
-%  {%
- % \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{Cold Atoms Group in the }{}%
- % \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{Groupe Atomes Froids de la }{}%
-%  Columbia University (New York)
-  }%
-%  \\
-% 30 
-%  \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{years old}{}
-%  \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{ans}{}
-%  }
-\rightheader{\href{https://www.linkedin.com/in/gaelreinaudi}{linkedin.com/in/gaelreinaudi}}
+New York, NY
+\enspace\textcolor{rulegray}{$|$}\enspace
+(646) 422-9346
+\enspace\textcolor{rulegray}{$|$}\enspace
+\href{mailto:gael.reinaudi@gmail.com}{gael.reinaudi@gmail.com}
+\enspace\textcolor{rulegray}{$|$}\enspace
+\href{https://www.linkedin.com/in/gaelreinaudi}{linkedin.com/in/gaelreinaudi}}
+\rightheader{\mbox{}}
 
 \titlefont{\fontfamily{pag}\selectfont\bfseries\Large\color{executivenavy}}
-\title{AI \& ENGINEERING EXECUTIVE}
+\title{AI PLATFORM ARCHITECT \& ENGINEERING LEADER}
 
 \subtitlefont{\fontfamily{pag}\selectfont\itshape\normalsize}
-\subtitle{Agentic Systems $|$ AI-Native Organizations $|$ Financial \& Mission-Critical Systems}
+\subtitle{Production Agentic Systems $|$ Shared AI Infrastructure $|$ Financial \& Regulated Systems}
+\titlealignment{l}
 
 \rubricfont{\fontfamily{pag}\selectfont\bfseries\large\color{executivenavy}}
 \subrubricfont{\fontfamily{pag}\selectfont\bfseries\normalsize\color{executivenavy}}
-\keyfont{\fontfamily{pag}\selectfont\bfseries}
+\keyfont{\bfseries}
 
 \usepackage{pifont}
 %\prefix{\ding{44}}
@@ -90,8 +89,8 @@ New York, NY \enspace\textcolor{rulegray}{$|$}\enspace (646) 422-9346\\
 \continuedname{~~(continued)}
 
 \setlength\rubricspace{2pt}
-\setlength\rubricafterspace{-0.40cm}
-\setlength\subrubricbeforespace{6pt}
+\setlength\rubricafterspace{3pt}
+\setlength\subrubricbeforespace{5pt}
 \setlength\subrubricspace{1pt}
 %\renewcommand\arraystretch{1.5}
 %\setlength\rubricafterspace{-20pt}
@@ -99,8 +98,8 @@ New York, NY \enspace\textcolor{rulegray}{$|$}\enspace (646) 422-9346\\
 \makeatletter
 \def\@@rubrichead#1{%
   \@rubricfont%
-  \makebox[0pt][l]{\raisebox{-4pt}[0pt][0pt]{\color{rulegray}\rule{\linewidth}{0.55pt}}}%
-  \makebox[\linewidth][l]{#1}}
+  \makebox[0pt][l]{\raisebox{-4pt}[0pt][0pt]{\color{rulegray}\rule{\@almosttextwidth}{0.55pt}}}%
+  \makebox[\@almosttextwidth][l]{#1}}
 \def\@@subrubric#1{%
   \rule{0bp}{\@beforespace}
   {\@subrubricfont #1}%
@@ -111,11 +110,15 @@ New York, NY \enspace\textcolor{rulegray}{$|$}\enspace (646) 422-9346\\
 %\usepackage{shortcuts}
 %\usepackage{dvl}
 
-\headerscale{.65}
-\setlength\headerspace{2pt}
-\setlength\titlespace{3pt}
+\headerscale{1}
+\setlength\headerspace{6pt}
+\setlength\titlespace{4pt}
 
 \makeatletter
+\def\@@maketitle{%
+  \noindent{\@titlefont\@title}%
+  \ifx\@subtitle\@undefined\else\\{\@subtitlefont\@subtitle}\fi
+  \par\vspace\titlespace}
 \def\mymulticol{\@nextentry\noalign{\gdef\@nextentry{}}
   \multicolumn}
 \makeatother
@@ -123,17 +126,14 @@ New York, NY \enspace\textcolor{rulegray}{$|$}\enspace (646) 422-9346\\
 
 \begin{document}
 \makeheaders[t]
-\vspace{-0.4cm}
 \maketitle
-
-\vspace{-0.25cm}
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
 % \vspace{-0.2cm}
 \makerubric{quant_summary_en}
-\makerubric{quant_skills_en}
 \makerubric{quant_experience_en}
 \makerubric{quant_independent_research_en}
+\makerubric{quant_skills_en}
 \makerubric{quant_formation_en}
 \makerubric{quant_divers_en}
 }{}
