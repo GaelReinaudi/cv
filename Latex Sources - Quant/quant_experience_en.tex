@@ -1,24 +1,36 @@
 \begin{rubric}{Professional Experience}
 
+  % Split long jobs into same-key entries so CurVe can break them across pages
+  % instead of leaving a hole at the bottom of page 1.
   \entry*[2025--Present]%
   \textbf{Tactical Edge AI (New York):} Director of Engineering
   \par
   \begin{cvitems}
-    \item Architected and own the \textbf{shared Python agent platform used across 5+ production products},
+    \item Architected and own the \textbf{shared Python agent platform used across 5+ products in production},
     with typed interfaces and outputs, automatic introspection, tool orchestration, multimodal inputs,
     evaluation, observability, cost measurement, drift tracking, and the supporting AWS infrastructure.
     \item Built \textbf{\href{https://connectory.ai}{Connectory.ai}} from scratch, an AI-native engineering
     governance and repository-intelligence platform that has analyzed thousands of pull requests across
-    dozens of repositories, surfacing architecture drift, duplicated implementations, repository-specific
-    violations, and brittle AI-generated code.
+    dozens of repositories, surfacing architecture drift, duplicated implementations,
+    \textbf{cross-repository API contract drift}, repository-specific violations, framework misuse, and
+    brittle AI-generated code.
+  \end{cvitems}
+
+  \entrycont[2025--Present]%
+  \begin{cvitems}
     \item Built cross-repository and cross-project context around \textbf{purpose, architecture, conventions,
-    ownership, and engineering intent}, so agents reason against how the organization actually builds
-    software instead of generic coding rules.
+    ownership, and engineering intent}. Agents use this institutional memory, from spec design to code
+    review, to evaluate changes against the actual \textbf{engineering intent} and the organization's
+    \textbf{long-term goals}.
     \item Led teams of \textbf{10--20 engineers} and established the architectural standards, reusable
-    development patterns, AI-assisted workflows, and review practices used across products. Drove the move
+    development patterns, AI-assisted workflows, and review practices used across projects. Drove the move
     toward smaller teams amplified by agents and shared infrastructure, and taught engineers to use agents
     for cross-codebase reasoning, testing, debugging, review, and architectural analysis without handing
     over engineering judgment.
+  \end{cvitems}
+
+  \entrycont[2025--Present]%
+  \begin{cvitems}
     \item Designing an \textbf{AI supervisory layer for an edge-deployed industrial vision system} that
     detects when environmental changes push the system out of its working range, reasons across imagery and
     system state, reconfigures itself, and verifies that performance has recovered before keeping the new
@@ -28,7 +40,7 @@
     use the \textbf{same application logic as the operational system}, including replay of the recorded
     sequence surrounding a real aircraft accident. Operators can see what the system would have perceived
     and surfaced, exercise consequential scenarios safely, and learn when to trust it before they have to
-    rely on it. An AI system the client does not trust is worthless.
+    rely on it.
   \end{cvitems}
 
   \entry*[2021--2024]%
@@ -43,8 +55,21 @@
     \item Architected a \textbf{plugin-based candidate-intelligence platform} with shared crawling,
     retrieval, structured extraction, knowledge representation, and research infrastructure, while keeping
     each domain's data sources, constraints, workflows, and judgment in its own plugins.
-    \item Built multi-step research and AI systems combining structured extraction, retrieval, heterogeneous
-    external sources, tools, and domain-specific reasoning.
+  \end{cvitems}
+
+  \entrycont[2021--2024]%
+  \begin{cvitems}
+    \item Built multi-step research systems in which specialized agents coordinated structured extraction,
+    retrieval, heterogeneous external sources, tools, and domain-specific reasoning across substantially
+    different search problems.
+  \end{cvitems}
+
+  \entry*[2021--2024]%
+  \textbf{\href{https://sinecure.ai}{Sinecure.AI} (New York):} Co-Founder, Architect \& CTO
+  \par
+  \begin{cvitems}
+    \item Built evaluation and testing around LLM-powered workflows, including benchmark design, robustness
+    checks, and output-quality assessment to catch brittle behavior before it reached production.
     \item Built and operated the production stack using \textbf{Python, Pydantic, Django, Hasura / GraphQL,
     GCP, Kubernetes, and Cloud Run}.
     \item Recruited and led a \textbf{5-person engineering team} while continuing to design architecture,
@@ -55,7 +80,7 @@
   \subrubric{Financial Systems \& Quantitative Engineering}
 
   \entry*[2024--2025]%
-  \textbf{Latour Trading LLC / Tower Research (New York):} Quantitative Developer
+  \textbf{Latour Trading / Tower Research (New York):} Quantitative Developer
   \par
   Extended and maintained performance-sensitive \textbf{C++ research infrastructure} used daily by
   quantitative researchers inside Tower Research's Latour Trading group.
@@ -63,21 +88,22 @@
   \entry*[2018--2021]%
   \textbf{JPMorgan (New York):} Data Scientist Manager, Vice President
   \par
-  Built production AI/ML infrastructure that continuously integrated heterogeneous live data into model
-  training, prediction, and evaluation; developed deep-learning systems trained and evaluated continuously
-  against live data.
+  Built production AI/ML infrastructure continuously integrating heterogeneous live data into model
+  training, prediction, and evaluation. Built \textbf{Temporal Convolutional Network models trained and
+  evaluated continuously on live market data}.
 
   \entry*[2015--2018]%
   \textbf{Ronin Capital (New York):} Lead Data Scientist / Lead Strategy Developer
   \par
-  Worked in a \textbf{two-person team as the sole engineer and quantitative researcher paired directly with
-  the portfolio manager}. Built the order-management system and multiple machine-learning-driven equity and
-  ETF strategies, from research and model evaluation through live trading.
+  Worked in a two-person team as the sole engineer and quantitative researcher paired directly with the
+  portfolio manager, jointly driving strategy selection, risk, and research direction across both
+  systematic and discretionary research. Built the order-management system and multiple
+  machine-learning-driven equity and ETF strategies from research and evaluation through live trading.
 
   \entry*[2013--2015]%
   \textbf{Global Trading Systems (New York):} Lead Trading Model Developer
   \par
   Built systematic fixed-income trading logic, backtesting, analysis, and automated production deployment;
-  optimized latency-sensitive C++ through metaprogramming, branch-prediction awareness, and cache-level
-  performance work.
+  optimized latency-sensitive C++ through metaprogramming, branch-prediction awareness, cache-level
+  performance work, and early machine-learning methods for parameter optimization.
 \end{rubric}

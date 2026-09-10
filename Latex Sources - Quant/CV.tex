@@ -53,7 +53,7 @@ skipsamekey]{curve}
   \begin{list}{$\diamond$}{%
     \setlength{\leftmargin}{1.35em}%
     \setlength{\itemsep}{2pt}%
-    \setlength{\topsep}{1pt}%
+    \setlength{\topsep}{0pt}%
     \setlength{\partopsep}{0pt}%
     \setlength{\parsep}{0pt}}%
   \raggedright
@@ -80,7 +80,7 @@ New York, NY
 \title{AI PLATFORM ARCHITECT \& ENGINEERING LEADER}
 
 \subtitlefont{\fontfamily{pag}\selectfont\bfseries\itshape\normalsize}
-\subtitle{Production Agentic Systems $|$ Reusable AI Infrastructure $|$ AI for High-Stakes, Highly Regulated Environments}
+\subtitle{Production Agentic Systems $|$ Deliberate Architecture $|$ AI for High-Stakes, Regulated Environments}
 \titlealignment{l}
 
 \rubricfont{\fontfamily{pag}\selectfont\bfseries\large\color{executivenavy}}
@@ -97,7 +97,7 @@ New York, NY
 % titlespace=0pt, tabcolsep=10pt. Inter-row leading is \arraystretch.
 \setlength\rubricspace{6pt}
 \setlength\rubricafterspace{5pt}
-\setlength\subrubricbeforespace{10pt}
+\setlength\subrubricbeforespace{6pt}
 \setlength\subrubricspace{4pt}
 
 \makeatletter
@@ -124,6 +124,16 @@ New York, NY
   \noindent{\@titlefont\@title}%
   \ifx\@subtitle\@undefined\else\\{\@subtitlefont\@subtitle}\fi
   \par\vspace\titlespace}
+% Same as \entry* but with an empty prefix, so split jobs can continue
+% without a stray bullet when skipsamekey hides the repeated date.
+\newcommand\entrycont{%
+  \@nextentry
+  \noalign\bgroup\gdef\@beforespace{0pt}%
+  \@entrycont}
+\newcommand\@entrycont[1][]{%
+  \gdef\@nextentry{\\\par}\@key{#1}%
+  \egroup
+  \@@key&&}
 \makeatother
 \pagestyle{empty}
 
@@ -132,11 +142,11 @@ New York, NY
 \maketitle
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
-% \vspace{-0.2cm}
-\makerubric{quant_summary_en}
+\input{quant_summary_en}
 \makerubric{quant_experience_en}
 \makerubric{quant_skills_en}
 \makerubric{quant_formation_en}
+\makerubric{quant_divers_en}
 }{}
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{
