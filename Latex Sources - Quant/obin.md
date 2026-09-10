@@ -8,7 +8,7 @@ New York, NY | (646) 422-9346 | [gael.reinaudi@gmail.com](mailto:gael.reinaudi@g
 
 **Expert Python engineer and architect, from application code through cloud deployment.** Drawn to hard, messy systems where the real problem is buried under accidental complexity. Proudest when a hard problem collapses into a simple design.
 
-For high-stakes AI, **trust-building is part of the product itself**. Users need a safe way to experience the system before they have to depend on it, so they can trust the tool performs when it matters. **An AI system the client does not trust is worthless.**
+For high-stakes AI, **trust-building is part of the product itself**. Users need a safe way to experience the system before they have to depend on it, so they can build justified confidence in how it performs when it matters. **An AI system the client does not trust is worthless.**
 
 Currently Director of Engineering at Tactical Edge AI; previously co-founder and CTO of Sinecure.AI. Quantitative engineering roles at Latour Trading / Tower Research, JPMorgan, Ronin Capital, and GTS.
 
