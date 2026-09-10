@@ -6,9 +6,9 @@ New York, NY | (646) 422-9346 | [gael.reinaudi@gmail.com](mailto:gael.reinaudi@g
 
 **Production Agentic Systems | Deliberate Architecture | AI for High-Stakes, Regulated Environments**
 
-**Expert Python engineer and architect, from application code through cloud deployment.** Drawn to hard, messy systems where the real problem is buried under accidental complexity. Comfortable with sophisticated methods, but only when they earn their complexity. Proudest when a hard problem collapses into a simple design.
+**Expert Python engineer and architect, from application code through cloud deployment.** Drawn to hard, messy systems where the real problem is buried under accidental complexity. Proudest when a hard problem collapses into a simple design.
 
-For high-stakes AI, **trust-building is part of the product itself**. Users need a safe way to experience the system before they have to depend on it, so they can learn whether it actually performs when it matters. **An AI system the client does not trust is worthless.**
+For high-stakes AI, **trust-building is part of the product itself**. Users need a safe way to experience the system before they have to depend on it, so they can trust the tool performs when it matters. **An AI system the client does not trust is worthless.**
 
 Currently Director of Engineering at Tactical Edge AI; previously co-founder and CTO of Sinecure.AI. Quantitative engineering roles at Latour Trading / Tower Research, JPMorgan, Ronin Capital, and GTS.
 
@@ -99,4 +99,4 @@ Designed **LabExe**, a plugin-based experimental-control platform with reusable 
 
 **FINRA Series 57** • Top 0.5% on the CodinGame competitive-programming platform 
 
-**Instrument-rated private pilot and aircraft owner* • Combat robotics builder and competitor (NHRL) • Experimental electronics builder
+**Instrument-rated private pilot and aircraft owner** • Combat robotics builder and competitor (NHRL) • Experimental electronics builder
