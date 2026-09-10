@@ -27,7 +27,7 @@ skipsamekey]{curve}
 
 \NeedsTeXFormat{LaTeX2e}
 % CurVe does not set margins; the class manual (sec. 4.1) says use geometry.
-\usepackage[nohead,nofoot,hmargin=1.15cm,vmargin=0.95cm]{geometry}
+\usepackage[nohead,nofoot,hmargin=1.2cm,top=1.0cm,bottom=0.7cm]{geometry}
 \usepackage{floatflt}
 \usepackage{babel}
 \usepackage[latin1]{inputenc}
@@ -41,18 +41,17 @@ skipsamekey]{curve}
 \definecolor{executivenavy}{RGB}{31, 58, 82}
 \definecolor{rulegray}{RGB}{150, 157, 163}
 \usepackage[colorlinks, urlcolor=executivenavy]{hyperref}
-% Class default is 10pt; 8pt keeps the date column readable without
-% forcing extra wraps that blow the page count.
-\setlength{\tabcolsep}{5pt}
+% Class default is 10pt. Keep a little extra gap in the date column so
+% the page does not read as one packed text block.
+\setlength{\tabcolsep}{6pt}
 \emergencystretch=1.5em
 \hyphenpenalty=6000
 \exhyphenpenalty=6000
-% Diamond lists sit inside CurVe entries. Keep the marker; use ordinary list
-% glue instead of crushing itemsep/topsep to 1pt.
+% Cluster diamonds inside a job; keep a hair of space so wraps do not fuse.
 \newenvironment{cvitems}{%
   \begin{list}{$\diamond$}{%
-    \setlength{\leftmargin}{1.35em}%
-    \setlength{\itemsep}{2pt}%
+    \setlength{\leftmargin}{1.4em}%
+    \setlength{\itemsep}{2.5pt}%
     \setlength{\topsep}{3pt}%
     \setlength{\partopsep}{0pt}%
     \setlength{\parsep}{0pt}}%
@@ -65,26 +64,22 @@ skipsamekey]{curve}
 \photoscale{0.12}
 
 \leftheader{%
-{\large\textbf{GAEL REINAUDI}}\\[3pt]
+{\large\textbf{GAEL REINAUDI}}\\[2pt]
 \normalsize
 New York, NY
 \enspace\textcolor{rulegray}{$|$}\enspace
-(646) 422-9346
-\enspace\textcolor{rulegray}{$|$}\enspace
-\href{mailto:gael.reinaudi@gmail.com}{gael.reinaudi@gmail.com}
-\enspace\textcolor{rulegray}{$|$}\enspace
-\href{https://www.linkedin.com/in/gaelreinaudi}{linkedin.com/in/gaelreinaudi}}
-\rightheader{\mbox{}}
+(646) 422-9346\\
+\href{mailto:gael.reinaudi@gmail.com}{gael.reinaudi@gmail.com}}
+\rightheader{\href{https://www.linkedin.com/in/gaelreinaudi}{linkedin.com/in/gaelreinaudi}}
 
 \titlefont{\fontfamily{pag}\selectfont\bfseries\Large\color{executivenavy}}
 \title{AI PLATFORM ARCHITECT \& ENGINEERING LEADER}
 
-\subtitlefont{\fontfamily{pag}\selectfont\bfseries\itshape\normalsize}
+\subtitlefont{\fontfamily{pag}\selectfont\itshape\normalsize}
 \subtitle{Production Agentic Systems $|$ Deliberate Architecture $|$ AI for High-Stakes, Regulated Environments}
-\titlealignment{l}
 
-\rubricfont{\fontfamily{pag}\selectfont\bfseries\large\color{executivenavy}}
-\subrubricfont{\fontfamily{pag}\selectfont\bfseries\normalsize\color{executivenavy}}
+\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large\color{executivenavy}}
+\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large\color{executivenavy}}
 \keyfont{\bfseries}
 
 \usepackage{pifont}
@@ -95,10 +90,11 @@ New York, NY
 % CurVe class defaults (curve.cls / FAQ Q2): rubricspace=10pt,
 % subrubricbeforespace=20pt, subrubricspace=5pt, headerspace=10pt,
 % titlespace=0pt, tabcolsep=10pt. Inter-row leading is \arraystretch.
-\setlength\rubricspace{6pt}
-\setlength\rubricafterspace{5pt}
+\setlength\rubricspace{8pt}
+\setlength\rubricafterspace{6pt}
 \setlength\subrubricbeforespace{6pt}
-\setlength\subrubricspace{4pt}
+\setlength\subrubricspace{3pt}
+\renewcommand{\arraystretch}{1.12}
 
 \makeatletter
 \def\@@rubrichead#1{%
@@ -115,15 +111,11 @@ New York, NY
 %\usepackage{shortcuts}
 %\usepackage{dvl}
 
-\headerscale{1}
-\setlength\headerspace{8pt}
-\setlength\titlespace{6pt}
+\headerscale{.65}
+\setlength\headerspace{6pt}
+\setlength\titlespace{3pt}
 
 \makeatletter
-\def\@@maketitle{%
-  \noindent{\@titlefont\@title}%
-  \ifx\@subtitle\@undefined\else\\{\@subtitlefont\@subtitle}\fi
-  \par\vspace\titlespace}
 % Same as \entry* but with an empty prefix, so split jobs can continue
 % without a stray bullet when skipsamekey hides the repeated date.
 \newcommand\entrycont{%
@@ -140,6 +132,7 @@ New York, NY
 \begin{document}
 \makeheaders[t]
 \maketitle
+\vspace{-0.18cm}
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
 \input{quant_summary_en}

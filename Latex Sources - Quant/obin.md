@@ -29,9 +29,9 @@ Currently Director of Engineering at Tactical Edge AI; previously co-founder and
 
 * Led teams of **10–20 engineers** and established the architectural standards, reusable development patterns, AI-assisted workflows, and review practices used across projects. Drove the move toward smaller teams amplified by agents and shared infrastructure, and taught engineers to use agents for cross-codebase reasoning, testing, debugging, review, and architectural analysis without handing over engineering judgment.
 
-* Designing an **AI supervisory layer for an edge-deployed industrial vision system** that detects when environmental changes push the system out of its working range, reasons across imagery and system state, reconfigures itself, and verifies that performance has recovered before keeping the new configuration.
+* Designing an **AI supervisory layer for an edge-deployed industrial vision system** that detects when environmental changes push the system out of its working range, reasons across imagery and system state, and reconfigures itself.
 
-* Built a **voice-driven AI system for airbase operations** with structured operational state, procedural and regulatory retrieval, and decision support. The simulator and historical-event replay use the **same application logic as the operational system**, including replay of the recorded sequence surrounding a real aircraft accident. Operators can see what the system would have perceived and surfaced, exercise consequential scenarios safely, and learn when to trust it before they have to rely on it.
+* Built a **voice-driven AI system for airbase operations** with structured operational state, procedural and regulatory retrieval, and decision support. A simulator and historical-event replay allow the operator to build trust in the AI abilities.
 
 ### SINECURE.AI | New York, NY
 
