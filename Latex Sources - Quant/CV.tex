@@ -26,83 +26,84 @@ skipsamekey]{curve}
 
 
 \NeedsTeXFormat{LaTeX2e}
-\usepackage[nohead,nofoot,hmargin=1.0cm,vmargin=0.6cm]{geometry}
+% CurVe does not set margins; the class manual (sec. 4.1) says use geometry.
+\usepackage[nohead,nofoot,hmargin=1.2cm,top=1.0cm,bottom=0.7cm]{geometry}
 \usepackage{floatflt}
 \usepackage{babel}
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{palatino}
+\usepackage{microtype}
 
 \usepackage{graphicx}
 
-\usepackage[colorlinks, urlcolor=blue]{hyperref}
+\usepackage{xcolor}
+\definecolor{executivenavy}{RGB}{31, 58, 82}
+\definecolor{rulegray}{RGB}{150, 157, 163}
+\usepackage[colorlinks, urlcolor=executivenavy]{hyperref}
+% Class default is 10pt. Keep a little extra gap in the date column so
+% the page does not read as one packed text block.
+\setlength{\tabcolsep}{6pt}
+\emergencystretch=1.5em
+\hyphenpenalty=6000
+\exhyphenpenalty=6000
+% Cluster diamonds inside a job; keep a hair of space so wraps do not fuse.
+\newenvironment{cvitems}{%
+  \begin{list}{$\diamond$}{%
+    \setlength{\leftmargin}{1.4em}%
+    \setlength{\itemsep}{2.5pt}%
+    \setlength{\topsep}{3pt}%
+    \setlength{\partopsep}{0pt}%
+    \setlength{\parsep}{0pt}}%
+  \raggedright
+}{%
+  \end{list}%
+}
 
 %\photo[r]{image}
 \photoscale{0.12}
 
-\leftheader{\large\textbf{GAEL REINAUDI}\\
+\leftheader{%
+{\large\textbf{GAEL REINAUDI}}\\[2pt]
 \normalsize
-%Permanent resident\\
-352 West 117th street \#2F New York, NY 10026, USA\\
-+1 (646) 422 9346\\
-  \href{mailto:gael.reinaudi@gmail.com}{\texttt{gael.reinaudi@gmail.com}}\\
-%  \href%
-%  {http://www.columbia.edu/}%
-%  {%
- % \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{Cold Atoms Group in the }{}%
- % \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{Groupe Atomes Froids de la }{}%
-%  Columbia University (New York)
-  }%
-%  \\
-% 30 
-%  \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{years old}{}
-%  \ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{ans}{}
-%  }
-\rightheader{~}
+New York, NY
+\enspace\textcolor{rulegray}{$|$}\enspace
+(646) 422-9346\\
+\href{mailto:gael.reinaudi@gmail.com}{gael.reinaudi@gmail.com}}
+\rightheader{\href{https://www.linkedin.com/in/gaelreinaudi}{linkedin.com/in/gaelreinaudi}}
 
-\titlefont{\fontfamily{pag}\selectfont\bfseries\Huge}
-\title{}
+\titlefont{\fontfamily{pag}\selectfont\bfseries\Large\color{executivenavy}}
+\title{AI PLATFORM ARCHITECT \& ENGINEERING LEADER}
 
-\subtitlefont{\fontfamily{pag}\selectfont\itshape\huge}
-\subtitle{}
+\subtitlefont{\fontfamily{pag}\selectfont\itshape\normalsize}
+\subtitle{Production Agentic Systems $|$ Deliberate Architecture $|$ AI for High-Stakes, Regulated Environments}
 
-\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
-\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large}
-\keyfont{\fontfamily{pag}\selectfont\bfseries}
+\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large\color{executivenavy}}
+\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large\color{executivenavy}}
+\keyfont{\bfseries}
 
 \usepackage{pifont}
 %\prefix{\ding{44}}
 %\prefix{}
 \continuedname{~~(continued)}
 
-\setlength\rubricspace{5pt}
-\setlength\rubricafterspace{-0.53cm}
-\setlength\subrubricbeforespace{15pt}
-\setlength\subrubricspace{0pt}
-%\renewcommand\arraystretch{1.5}
-%\setlength\rubricafterspace{-20pt}
+% CurVe class defaults (curve.cls / FAQ Q2): rubricspace=10pt,
+% subrubricbeforespace=20pt, subrubricspace=5pt, headerspace=10pt,
+% titlespace=0pt, tabcolsep=10pt. Inter-row leading is \arraystretch.
+\setlength\rubricspace{8pt}
+\setlength\rubricafterspace{6pt}
+\setlength\subrubricbeforespace{6pt}
+\setlength\subrubricspace{3pt}
+\renewcommand{\arraystretch}{1.12}
 
-\usepackage{color}
 \makeatletter
-% Cross the rubric titles:
 \def\@@rubrichead#1{%
   \@rubricfont%
-  \makebox[0pt][l]{\colorbox[gray]{0.7}{\makebox[\linewidth-4\fboxsep]{}}}%
-  \makebox[\linewidth-2\fboxsep][c]{#1}}
-% or underline them:
-\iffalse
-\def\@@rubrichead#1{%
-  \@rubricfont%
-  \makebox[0pt][l]{\rule[-2mm]{\linewidth}{1mm}}%
-  \makebox[\linewidth-2\fboxsep][c]{#1}}
-\fi
+  \makebox[0pt][l]{\raisebox{-4pt}[0pt][0pt]{\color{rulegray}\rule{\@almosttextwidth}{0.55pt}}}%
+  \makebox[\@almosttextwidth][l]{#1}}
 \def\@@subrubric#1{%
   \rule{0bp}{\@beforespace}
-  {\@subrubricfont%
-    \makebox[1ex][l]{\colorbox[gray]{0.7}{%
-    %\textcolor[gray]{0.7}{M}
-    \phantom M%
-    }}#1}%
+  {\@subrubricfont #1}%
   \@subrubricmark{#1}}
 \makeatother
 
@@ -111,26 +112,33 @@ skipsamekey]{curve}
 %\usepackage{dvl}
 
 \headerscale{.65}
+\setlength\headerspace{6pt}
+\setlength\titlespace{3pt}
 
 \makeatletter
-\def\mymulticol{\@nextentry\noalign{\gdef\@nextentry{}}
-  \multicolumn}
+% Same as \entry* but with an empty prefix, so split jobs can continue
+% without a stray bullet when skipsamekey hides the repeated date.
+\newcommand\entrycont{%
+  \@nextentry
+  \noalign\bgroup\gdef\@beforespace{0pt}%
+  \@entrycont}
+\newcommand\@entrycont[1][]{%
+  \gdef\@nextentry{\\\par}\@key{#1}%
+  \egroup
+  \@@key&&}
 \makeatother
 \pagestyle{empty}
 
 \begin{document}
 \makeheaders[t]
-
-\vspace{-1.2cm}
+\maketitle
+\vspace{-0.18cm}
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
-\makerubric{quant_summary_en}
-\vspace{-0.2cm}
-\makerubric{quant_formation_en}
-\vspace{-0.2cm}
-\makerubric{quant_skills_en}
-\vspace{-0.2cm}
+\input{quant_summary_en}
 \makerubric{quant_experience_en}
+\makerubric{quant_skills_en}
+\makerubric{quant_formation_en}
 \makerubric{quant_divers_en}
 }{}
 
@@ -139,9 +147,8 @@ skipsamekey]{curve}
 \makerubric{experience_fr}
 \makerubric{divers_fr}}
 {}
-\newpage
-
-\makerubric{../publications}
+% Publications omitted from the Veritas-specific executive resume.
+% \makerubric{quant_publications_en}
 
 %\nocite{*}
 %\bibliographystyle{plain}

@@ -1,1 +1,4 @@
 /models/
+*.aux
+*.log
+*.out
