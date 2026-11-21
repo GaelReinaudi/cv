@@ -16,7 +16,7 @@ OUT="$ADE_DIR/CV_ade.pdf"
 JOB=CV_ade.build
 LOG="$ADE_DIR/CV_ade.compile.log"
 DATED="$ADE_DIR/CV_Adeline_Monzier_$(date +%Y-%m-%d).pdf"
-EXPECTED_PAGES=2
+EXPECTED_PAGES=3
 
 mode=auto
 [[ "${1:-}" == "--docker" ]] && mode=docker

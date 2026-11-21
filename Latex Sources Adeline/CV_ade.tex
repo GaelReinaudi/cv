@@ -1,147 +1,103 @@
 %%% cv.ltx
 
-%% Author:        Didier Verna <didier@lrde.epita.fr>
-%% Maintainer:    Didier Verna <didier@lrde.epita.fr>
-%% Created:       Fri 21 18:07:48 1999 under XEmacs 21.2 (beta 12)
-%% Last Revision: Mon Jul 12 12:00:43 1999
-
-
-%%% Commentary:
-
-%% Contents management by FCM version 0.1.
-
-%\typein[\draftorfinal]{Please specify draft or final (draft by default):}
-%\ifx\draftorfinal\empty
-%  \def\draftorfinal{draft}
-%\fi
-
 \newcommand{\EnAnglais}{english}
 \newcommand{\EnFrancais}{french}
 
-\newcommand{\EnQuelleLangue}{\EnAnglais} % 0 Anglais, 1 Francais
+\newcommand{\EnQuelleLangue}{\EnAnglais}
 
-\documentclass[\EnQuelleLangue,%
-%a4paper,%
-skipsamekey]{curve}
-
+\documentclass[\EnQuelleLangue,skipsamekey]{curve}
 
 \NeedsTeXFormat{LaTeX2e}
-\usepackage[nohead,nofoot,hmargin=1.8cm,vmargin=0.7cm]{geometry}
+\usepackage[nohead,nofoot,hmargin=1.2cm,top=1.0cm,bottom=0.7cm]{geometry}
 \usepackage{floatflt}
 \usepackage{babel}
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{palatino}
+\usepackage{microtype}
 
 \usepackage{graphicx}
 
-\usepackage[colorlinks, urlcolor=black, linkcolor=black]{hyperref}
-\usepackage{enumitem}
+\usepackage{xcolor}
+\definecolor{executivenavy}{RGB}{31, 58, 82}
+\definecolor{rulegray}{RGB}{150, 157, 163}
+\usepackage[colorlinks, urlcolor=executivenavy]{hyperref}
+
+\setlength{\tabcolsep}{6pt}
+\emergencystretch=1.5em
+\hyphenpenalty=6000
+\exhyphenpenalty=6000
 \newenvironment{cvitems}{%
-  \begin{itemize}[noitemsep, topsep=2pt, partopsep=0pt, parsep=0pt,
-    leftmargin=1.4em, label={$\diamond$}]%
+  \begin{list}{$\diamond$}{%
+    \setlength{\leftmargin}{1.4em}%
+    \setlength{\itemsep}{2pt}%
+    \setlength{\topsep}{2.5pt}%
+    \setlength{\partopsep}{0pt}%
+    \setlength{\parsep}{0pt}}%
+  \raggedright
 }{%
-  \end{itemize}%
+  \end{list}%
 }
 
-%\photo[r]{image}
 \photoscale{0.12}
 
 \leftheader{%
-  \centering
-  \large\textbf{ADELINE MONZIER}\\[2pt]%
-  \normalsize
-  \href{mailto:adeline.harlemcinema@gmail.com}{adeline.harlemcinema@gmail.com}%
-  \ -\ (646) 422 9348\ -\ New York, NY\\[3pt]%
-  {\subtitlefont\AdeSubtitle}\\[4pt]%
-}
+{\large\textbf{ADELINE MONZIER}}\\[2pt]
+\normalsize
+352 West 117th Street, New York, NY 10026\\
+(646) 422 9348\\
+\href{mailto:adeline.harlemcinema@gmail.com}{adeline.harlemcinema@gmail.com}}
 
 \rightheader{~}
 
-\titlefont{\fontfamily{pag}\selectfont\bfseries\Huge}
+\titlefont{\fontfamily{pag}\selectfont\bfseries\Large\color{executivenavy}}
 \title{}
 
 \subtitlefont{\fontfamily{pag}\selectfont\itshape\normalsize}
-\newcommand{\AdeSubtitle}{Non-Profit Leadership $|$ Film Education \& Programming\\%
-  Festival Operations $|$ Community Partnerships}
 \subtitle{}
 
-\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
-\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\large}
-\keyfont{\fontfamily{pag}\selectfont\bfseries}
+\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large\color{executivenavy}}
+\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\normalsize\color{executivenavy}}
+\keyfont{\bfseries}
 
 \usepackage{pifont}
-%\prefix{\ding{44}}
-%\prefix{}
 \continuedname{~~(continued)}
 
-\setlength\rubricspace{5pt}
-\setlength\rubricafterspace{-0.53cm}
-\setlength\subrubricbeforespace{15pt}
-\setlength\subrubricspace{0pt}
-\renewcommand\arraystretch{1.44}
-%\setlength\rubricafterspace{-20pt}
+\setlength\rubricspace{8pt}
+\setlength\rubricafterspace{6pt}
+\setlength\subrubricbeforespace{18pt}
+\setlength\subrubricspace{4pt}
+\renewcommand{\arraystretch}{1.06}
 
-\usepackage{color}
 \makeatletter
-% Cross the rubric titles:
 \def\@@rubrichead#1{%
   \@rubricfont%
-  \makebox[0pt][l]{\colorbox[gray]{0.7}{\makebox[\linewidth-4\fboxsep]{}}}%
-  \makebox[\linewidth-2\fboxsep][c]{#1}}
-% or underline them:
-\iffalse
-\def\@@rubrichead#1{%
-  \@rubricfont%
-  \makebox[0pt][l]{\rule[-2mm]{\linewidth}{1mm}}%
-  \makebox[\linewidth-2\fboxsep][c]{#1}}
-\fi
+  \makebox[0pt][l]{\raisebox{-4pt}[0pt][0pt]{\color{rulegray}\rule{\@almosttextwidth}{0.55pt}}}%
+  \makebox[\@almosttextwidth][l]{#1}}
 \def\@@subrubric#1{%
   \rule{0bp}{\@beforespace}
-  {\@subrubricfont%
-    \makebox[1ex][l]{\colorbox[gray]{0.7}{%
-    %\textcolor[gray]{0.7}{M}
-    \phantom M%
-    }}#1}%
+  {\@subrubricfont #1}%
   \@subrubricmark{#1}}
 \makeatother
 
-%\usepackage{logos}
-%\usepackage{shortcuts}
-%\usepackage{dvl}
+\headerscale{.65}
+\setlength\headerspace{6pt}
+\setlength\titlespace{0pt}
 
-\headerscale{1.0}
-
-\makeatletter
-\def\mymulticol{\@nextentry\noalign{\gdef\@nextentry{}}
-  \multicolumn}
-\makeatother
 \pagestyle{empty}
 
 \begin{document}
 \makeheaders[t]
-
-\vspace{-0.55cm}
+\vspace{-0.2cm}
 
 \ifthenelse{\equal{\EnQuelleLangue}{\EnAnglais}}{
 \makerubric{ade_summary_en}
-\makerubric{ade_festival_programming_en}
-\makerubric{ade_international_en}
-\makerubric{ade_teaching_en}
 \makerubric{ade_formation_en}
+\makerubric{ade_publications_en}
+\makerubric{ade_programming_en}
+\makerubric{ade_experience_en}
+\makerubric{ade_honors_en}
 \makerubric{ade_divers_en}
 }{}
 
-\ifthenelse{\equal{\EnQuelleLangue}{\EnFrancais}}{
-\makerubric{experience_fr}
-\makerubric{formation_fr}
-\makerubric{divers_fr}}
-{}
-
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{didier}
-
 \end{document}
-
-%%% cv.ltx ends here
